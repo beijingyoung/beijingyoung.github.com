@@ -13,5 +13,6 @@ body {
 }
 #logo {
 	margin: 25% auto;
+	display: block;
 	text-align: center;
 }
