@@ -8,5 +8,9 @@
 
 
 body {
+	background: url(../images/bg.jpg);
 	font-family: "Holy Mackerel Outline";
+}
+#logo {
+	margin: 25% auto;
 }
