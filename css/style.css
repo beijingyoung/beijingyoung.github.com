@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Holy Mackerel Outline';
+	src: url('/font/HolyMackerelOutline.eot?#iefix') format('embedded-opentype'), 
+		 url('/font/HolyMackerelOutline.woff') format('woff'), 
+		 url('/font/HolyMackerelOutline.ttf')  format('truetype'),
+		 url('/font/HolyMackerelOutline.svg#svgFontName') format('svg');
+}
+
+
+body {
+	font-family: "Holy Mackerel Outline";
+}
