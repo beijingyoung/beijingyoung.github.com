@@ -10,6 +10,10 @@
 body {
 	background: url(../images/bg.gif);
 	font-family: "Holy Mackerel Outline";
+	-webkit-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.15);
+	-moz-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.15);
+	-o-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.15);
+	box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.15);
 }
 #logo {
 	margin: 25% auto;
