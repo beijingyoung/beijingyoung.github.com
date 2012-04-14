@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.zh.min.css" />
+	
+	<meta charset="UTF-8">
+	<title>Android ADB 操作指南</title>
+	
+	<style type="text/css">
+	html {
+		background: #e4e7ee url(tree.png) bottom left no-repeat;
+	}
+	body {
+		border: 1px solid #c3c3c3;
+		-webkit-box-shadow: 1px 1px 5px #ccc;
+		-moz-box-shadow: 1px 1px 5px #ccc;
+		box-shadow: 1px 1px 5px #ccc;
+		background: #fff;
+		width: 560px;
+		padding: 2em 1.5em;
+		margin: 2em auto;
+		color: #036;
+		text-shadow: 0 1px #ddd;
+	}
+	h1 {
+		color: #800080;
+		font-size: 20px;
+	}
+	h2 {
+		color: #808000;
+		font-size: 16px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		padding-bottom: 0.33em;
+	}
+	p {
+		font-size: 13px;
+		line-height: 1.56em;
+		padding: 0 0 1em;
+	}
+	pre {
+		padding: 1em 1.3em;
+		font-size: 14px;
+		line-height: 1.8em;
+		background: #ece4ee;
+		color: #333;
+	}
+	sup {
+		font-size: 10px;
+		color: #800080;
+	}
+	code {
+		color: #fe1a7c;
+	}
+	</style>
+	
+</head>
+<body>
+	
+	<h1>Android ADB 操作指南</h1>
+	
+	<p style="padding: 0.3em 0.5em; margin: 0 0 1em; color: #575757; background: #ffc; border: 1px solid #dedede;">! ADB (Android Debug Bridge) 操作需要将 Android SDK <code>/tool 和 /platform-tools</code> 加入环境变量。</p>
+	
+	<p>终端 <code>$ adb -help</code>: <br />
+<pre>
+Android Debug Bridge version 1.0.26 - #当升级 Android SDK 后，ADB 也会随之升级。
+
+<code>-d</code> - <sup>EN</sup> directs command to the only connected USB device returns an error if more than one USB device is present.
+- <sup>CHS</sup> 该操作只针对已经通过 USB 链接的移动设备，如果链接一台以上的移动设备会返回一个错误。
+
+<code>-e</code> - <sup>EN</sup> directs command to the only running emulator. returns an error if more than one emulator is running.
+- <sup>CHS</sup> 该操作只针对模拟器，如果同时运行的模拟器数量大于一，会返回一个错误。
+
+<code>-s &lt;serial number&gt;</code> - <sup>EN</sup> directs command to the USB device or emulator with the given serial number. Overrides ANDROID_SERIAL environment variable.
+- <sup>CHS</sup> 该操作针对 USB 链接的设备 或 给定编号的模拟器，复写 serial number 为要操作的模拟器编号。
+
+<code>-p &lt;product name or path&gt;</code> - <sup>EN</sup> simple product name like 'sooner', or a relative/absolute path to a product out directory like 'out/target/product/sooner'. If -p is not specified, the ANDROID_PRODUCT_OUT environment variable is used, which must be an absolute path.
+- <sup>CHS</sup> 该操作针对 设备的名称 或 设备相对/绝对的路径， 如果未把设备的加入环境变量，必须给定一个绝对路径。
+
+<code>devices</code> - <sup>EN</sup> list all connected devices
+- <sup>CHS</sup> 列出所有已经链接或启动的设备清单
+
+<code>connect &lt;host&gt;[:&lt;port&gt;]</code> - <sup>EN</sup> connect to a device via TCP/IP Port 5555 is used by default if no port number is specified.
+- <sup>CHS</sup> 如果 connect 后面未赋值， 通过 TCP/IP 5555 端口链接设备。
+
+<code>disconnect [&lt;host&gt;[:&lt;port&gt;]]</code> - <sup>EN</sup> disconnect from a TCP/IP device. Port 5555 is used by default if no port number is specified. Using this ocmmand with no additional arguments will disconnect from all connected TCP/IP devices.
+- <sup>CHS</sup> 如果 disconnect 后面未赋值，断开 TCP/IP 5555 端口上的设备，也可以使用 <code>ocmmand</code> 参数断开所有已经链接的设备。
+
+
+device commands: #针对设备的命令
+
+<code>adb push &lt;local&gt; &lt;remote&gt;</code> - <sup>EN</sup> copy file/dir to device
+- <sup>CHS</sup> 复制 文件/目录 到设备
+
+<code>adb pull &lt;remote&gt; [&lt;local&gt;]</code> - <sup>EN</sup> copy file/dir from device
+- <sup>CHS</sup> 从设备复制 文件/目录
+
+<code>adb sync [ &lt;directory&gt; ]</code> - <sup>EN</sup> copy host->device only if changed (-l means list but don't copy) (see 'adb help all')
+- <sup>CHS</sup> 同步目录 该操作只针对 主机->设备 上的同步， 如果后面加 <code>-l</code> 意思为只罗列不复制。
+
+<code>adb shell</code> - <sup>EN</sup> run remote shell interactively
+- <sup>CHS</sup> 运行交互式 shell 脚本 (和 Linux, Unix 有区别，微型操作基本相同)
+
+<code>adb shell &lt;command&gt;</code> - <sup>EN</sup> run remote shell command
+- <sup>CHS</sup> 运行 shell 脚本 command 为参数
+
+<code>adb emu &lt;command&gt;</code> - <sup>EN</sup> run emulator console command
+- <sup>CHS</sup> 运行模拟器控制台命令
+
+<code>adb logcat [ &lt;filter-spec&gt; ]</code> - <sup>EN</sup> View device log
+- <sup>CHS</sup> 查看设备日志 (Eclipse logcat)
+
+<code>adb forward &lt;local&gt; &lt;remote&gt;</code> - <sup>EN</sup> forward socket connections forward specs are one of:
+- <sup>CHS</sup> 从本地的 socket 链接转移到特定的一个移动设备，参数如下：
+
+tcp:&lt;port&gt;
+localabstract:&lt;unix domain socket name&gt;
+localreserved:&lt;unix domain socket name&gt;
+localfilesystem:&lt;unix domain socket name&gt;
+dev:&lt;character device name&gt;
+jdwp:&lt;process pid&gt; (remote only)
+
+<code>adb jdwp</code> - <sup>EN</sup> list PIDs of processes hosting a JDWP transport
+- <sup>CHS</sup> 罗列 PIDs 进程寄宿 JDWP 传输
+
+<code>adb install [-l] [-r] [-s] &lt;file&gt;</code> - <sup>EN</sup> push this package file to the device and install it
+- <sup>CHS</sup> 给设备安装软件
+('-l' means forward-lock the app) #锁定该程序
+('-r' means reinstall the app, keeping its data) #重新安装该程序，保存数据
+('-s' means install on SD card instead of internal storage) #安装在SD卡内，而不是设备内部存储
+
+<code>adb uninstall [-k] &lt;package&gt;</code> - <sup>EN</sup> remove this app package from the device
+- <sup>CHS</sup> 从设备删除程序包
+('-k' means keep the data and cache directories) #不删除程序运行所产生的数据和缓存目录(如软件的数据库文件)
+
+<code>adb bugreport</code> - <sup>EN</sup> return all information from the device that should be included in a bug report.
+- <sup>CHS</sup> 返回所有的设备运行信息包括错误报告
+
+<code>adb help</code> - <sup>EN</sup> show this help message
+- <sup>CHS</sup> 显示帮助信息
+
+<code>adb version</code> - <sup>EN</sup> show version num
+- <sup>CHS</sup> 显示 adb 版本
+
+
+DATAOPTS: #数据操作
+(no option) - don't touch the data partition
+- <sup>CHS</sup> 请勿随意操作数据分区
+
+<code>-w</code> - <sup>EN</sup> wipe the data partition
+- <sup>CHS</sup> 擦拭数据分区
+
+<code>-d</code> - <sup>EN</sup> flash the data partition
+- <sup>CHS</sup> 针对闪存
+
+
+scripting: #脚本
+<code>adb wait-for-device</code> - <sup>EN</sup> block until device is online
+- <sup>CHS</sup> 等待设备链接
+
+<code>adb start-server</code> - <sup>EN</sup> ensure that there is a server running
+- <sup>CHS</sup> 确保在一个服务器上运行
+
+<code>adb kill-server</code> - <sup>EN</sup> kill the server if it is running
+- <sup>CHS</sup> 阻止设备与服务器之间的链接
+
+<code>adb get-state</code> - <sup>EN</sup> prints: offline | bootloader | device
+- <sup>CHS</sup> 打印设备当前的状态 |脱机<sub>关机</sub>|引导状态|运行状态
+
+<code>adb get-serialno</code> - <sup>EN</sup> prints: &lt;serial-number&gt;
+- <sup>CHS</sup> 打印序列号
+
+<code>adb status-window</code> - <sup>EN</sup> continuously print device status for a specified device
+- <sup>CHS</sup> 在该终端持续打印设备状态
+
+<code>adb remount</code> - <sup>EN</sup> remounts the /system partition on the device read-write
+- <sup>CHS</sup> 重新挂载系统分区获取设备的读写权限
+
+<code>adb reboot [bootloader|recovery]</code> - <sup>EN</sup> reboots the device, optionally into the bootloader or recovery program
+- <sup>CHS</sup> 重启启动设备，后面两个参数为引导程序和恢复程序
+
+<code>adb reboot-bootloader</code> - <sup>EN</sup> reboots the device into the bootloader
+- <sup>CHS</sup> 重启设备进入引导程序
+
+<code>adb root</code> - <sup>EN</sup> restarts the adbd daemon with root permissions
+- <sup>CHS</sup> 重新获取 adbd 宿主的管理员权限
+
+<code>adb usb</code> - <sup>EN</sup> restarts the adbd daemon listening on USB
+- <sup>CHS</sup> 在USB端口，重新获取 adbd 宿主
+
+<code>adb tcpip &lt;port&gt;</code> - <sup>EN</sup> restarts the adbd daemon listening on TCP on the specified port 
+- <sup>CHS</sup> 在制定 TCP/IP 端口，重新获取 adbd 宿主
+
+
+networking: #网络
+<code>adb ppp</code>
+<code>&lt;tty&gt; [parameters]</code>- <sup>EN</sup> Run PPP over USB. Note: you should not automatically start a PPP connection. &lt;tty&gt; refers to the tty for PPP stream. Eg. dev:/dev/omap_csmi_tty1 [parameters] - Eg. defaultroute debug dump local notty usepeerdns
+- <sup>CHS</sup> 运行 PPP 在 USB 端口。 注意：你不能自动控制开始一个PPP链接。 &lt;tty&gt; 是指电报打印机所出的声音流。
+
+<sup>EN</sup> adb sync notes: adb sync [ &lt;directory&gt; ] &lt;localdir&gt; can be interpreted in several ways:
+- If &lt;directory&gt; is not specified, both /system and /data partitions will be updated.
+- If it is &quot;system&quot; or &quot;data&quot;, only the corresponding partition is updated.
+- <sup>CHS</sup> adb 同步注意事项： adb sync [ &lt;目录&gt; ] &lt;本地目录&gt; 可以解释为几种方法：
+- 如果 &lt;目录&gt; 未指定，那么 /system 和 /data 磁盘都会更新
+- 指定 "system" 或 "data" 那么只有指定磁盘会更新 
+
+
+environmental variables: #环境变量
+
+<code>ADB_TRACE</code>- <sup>EN</sup> Print debug information. A comma separated list of the following values 1 or all, adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+- <sup>CHS</sup> 打印调试信息。使用都好隔开下面的一个或多个值，获取想要得到调试数据
+adb, sockets, packets, rwx, usb, sync, sysdeps, transport, jdwp
+
+<code>ANDROID_SERIAL</code>- <sup>EN</sup> The serial number to connect to. -s takes priority over this if given.
+
+<code>ANDROID_LOG_TAGS</code>- <sup>EN</sup> When used with the logcat option, only these debug tags are printed.</pre>
+</p>
+	
+	<p style="font-size: 0.86em; text-align: right; margin-top: 1em;">04/17/2011<br /><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a></p> 
+</body>
+</html>

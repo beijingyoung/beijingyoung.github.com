@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Vim 编辑器命令模式 键盘映射关系图</title>
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<link rel="stylesheet" media="screen" href="http://www.beijingyoung.com/public/css/reset.zh.min.css" />
+	
+	<style>
+	body { font-family: monospace; font-size: 110%; background: #f6f6f6; margin: 1em auto; }
+	.green { background: green; color: #fff; }
+	.olive { background: olive; color: #fff; }
+	.purple { background: purple; color: #fff; }
+	table { padding: 1em; margin: 1em; }
+	th, td { border: 1px solid #dedede; }
+	th { color: green; font-weight: none; }
+	td { padding: .3em 1em; }
+	</style>
+
+</head>
+<body>
+	
+	<h1>VI,VIM 编辑器命令模式 键盘映射关系图</h1>
+
+	<p class="green">普通模式</p>
+	<p class="olive">插入模式</p>
+	<p class="purple">命令行模式</p>
+
+	<table>
+		<tr>
+			<th>命令</th>
+			<th>作用</th>
+		</tr>
+		<tr>
+			<td class="green">a</td>
+			<td>在光标后输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">A</td>
+			<td>在当前行末尾输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">i</td>
+			<td>在光标前输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">I</td>
+			<td>在当前行开始输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">o</td>
+			<td>在当前行后输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">O</td>
+			<td>在当前行后输入文本</td>
+		</tr>
+		<tr>
+			<td class="green">b</td>
+			<td>移动当前单词的开始</td>
+		</tr>
+		<tr>
+			<td class="green">e</td>
+			<td>移动当前单词的结束</td>
+		</tr>
+		<tr>
+			<td class="green">w</td>
+			<td>向前移动一个单词</td>
+		</tr>
+		<tr>
+			<td class="green">h</td>
+			<td>向前移动一个字符</td>
+		</tr>
+		<tr>
+			<td class="green">j</td>
+			<td>向上移动一行</td>
+		</tr>
+		<tr>
+			<td class="green">k</td>
+			<td>向下移动一行</td>
+		</tr>
+		<tr>
+			<td class="green">l</td>
+			<td>向后移动一个字符</td>
+		</tr>
+		<tr>
+			<td class="green">x</td>
+			<td>删除光标所在的字符</td>
+		</tr>
+		<tr>
+			<td class="green">dw</td>
+			<td>删除光标所在的单词</td>
+		</tr>
+		<tr>
+			<td class="green">d$</td>
+			<td>删除光标至行尾所有字符</td>
+		</tr>
+		<tr>
+			<td class="green">D</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="green">dd</td>
+			<td>删除当前行</td>
+		</tr>
+		<tr>
+			<td class="green">r</td>
+			<td>替换光标所在字符</td>
+		</tr>
+		<tr>
+			<td class="green">R</td>
+			<td>替换字符序列</td>
+		</tr>
+		<tr>
+			<td class="green">cw</td>
+			<td>替换一个单词</td>
+		</tr>
+		<tr>
+			<td class="green">ce</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="green">cb</td>
+			<td>替换光标所在的前一个字符</td>
+		</tr>
+		<tr>
+			<td class="green">c$</td>
+			<td>替换光标位置至行尾的所有字符</td>
+		</tr>
+		<tr>
+			<td class="green">C</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="green">cc</td>
+			<td>替换当前行</td>
+		</tr>
+		<tr>
+			<td class="green">/charter</td>
+			<td>向前查询 charter</td>
+		</tr>
+		<tr>
+			<td class="green">?charter</td>
+			<td>向后查询 charter</td>
+		</tr>
+		<tr>
+			<td class="green">n</td>
+			<td>向前继续查询</td>
+		</tr>
+		<tr>
+			<td class="green">N</td>
+			<td>向后继续查询</td>
+		</tr>
+		<tr>
+			<td class="green">/yw</td>
+			<td>将光标所在单词拷入剪贴板</td>
+		</tr>
+		<tr>
+			<td class="green">y$</td>
+			<td>将光标至行尾的字符拷入剪贴板</td>
+		</tr>
+		<tr>
+			<td class="green">Y</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="green">yy</td>
+			<td>将当前行考入剪贴板</td>
+		</tr>
+		<tr>
+			<td class="green">p</td>
+			<td>将剪贴板中的内容粘贴在光标后</td>
+		</tr>
+		<tr>
+			<td class="green">P</td>
+			<td>将剪贴板中的内容粘贴在光标前</td>
+		</tr>
+		<tr>
+			<td class="purple">:q</td>
+			<td>不保存退出</td>
+		</tr>
+		<tr>
+			<td class="purple">:q!</td>
+			<td>不保存强制性退出</td>
+		</tr>
+		<tr>
+			<td class="purple">:w</td>
+			<td>保存编辑</td>
+		</tr>
+		<tr>
+			<td class="purple">:w filename</td>
+			<td>保存到文件</td>
+		</tr>
+		<tr>
+			<td class="purple">:w! filename</td>
+			<td>强制性保存到文件</td>
+		</tr>
+		<tr>
+			<td class="purple">:wq</td>
+			<td>保存并退出</td>
+		</tr>
+		<tr>
+			<td class="purple">:x</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="green">ZZ</td>
+			<td>同上</td>
+		</tr>
+		<tr>
+			<td class="purple">:set nu</td>
+			<td>显示行号</td>
+		</tr>
+		<tr>
+			<td class="green">nG</td>
+			<td>跳到第n行</td>
+		</tr>
+		<tr>
+			<td class="green">U</td>
+			<td>撤销</td>
+		</tr>
+		<tr>
+			<td class="green">.</td>
+			<td>重做</td>
+		</tr>
+		<tr>
+			<td class="green">nyy</td>
+			<td>拷贝n行</td>
+		</tr>
+		<tr>
+			<td class="purple">:e filename</td>
+			<td>创建新文件</td>
+		</tr>
+		<tr>
+			<td class="purple">:n filename</td>
+			<td>加载新文件</td>
+		</tr>
+	</table>
+
+</body>
+</html>

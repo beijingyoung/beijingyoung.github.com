@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.zh.min.css" />
+	
+<style type="text/css">
+html{background:#fff url(ubuntu.jpg) no-repeat;font-family:"Microsoft YaHei","Kai",Arial;}
+body{font-size:.876em;line-height:1.56;width:480px;margin:2em;padding:1em;color:#FFF;text-shadow:0 -1px 1px #d19738;background-color:#008000;background-color:rgba(000,128,000,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#99008000',EndColorStr='#99008000');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#99008000',EndColorStr='#99008000')";}
+h1,h2,h3,h4,h5,h6{margin:1em 0 0;color:#800080;font-size:1.2em;}
+a:link,a:visited{color:#FF0;}
+a:hover{color:#575757;background:#f2f2f2;}
+p{font-size:110%;padding:0.33em 0 1em;}
+pre{margin:0.5em 0;padding:1em;border:3px dashed #fff105;}
+</style>
+	
+	<meta charset="UTF-8">
+	<title>硬盘安装Ubuntu</title>
+	
+</head>
+<body>
+	
+	<h1>硬盘安装Ubuntu</h1>
+	<p>网络这类指南一大堆，此指南只是记录，为二次安装方便。先说下我的运行环境，装有 Windows XP SP2 的计算机一台。此台计算机主要目的是前端兼容性测试，安装 Ubuntu 默认写入硬盘 MBR，也就是说安装完成后系统默认运行 Ubuntu, 然后通过修改 Grub 2 配置文件后才能引导 Windows。 如果您需要在 Windows 下引导 Ubuntu 请 Google。</p>
+	
+	<h2>第一步：下载Grub4Dos</h2>
+	<p><a href="http://download.gna.org/grub4dos/grub4dos-0.4.4.zip">点击下载 或 使用鼠标右键选择另存为</a>, 下载完成后解压缩， 拷贝grldr 文件到 C 盘。</p>
+	
+	<h2>第二部：写入menu.lst文件</h2>
+	<p>打开任何文本编辑器写入：<pre>title Install Ubuntu
+root (hd0,0)
+kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-10.10-desktop-i386.iso ro quiet splash locale=zh_CN.UTF-8
+initrd (hd0,0)/initrd.lz</pre><br />
+保存为menu.lst并放入C盘根目录。</p>
+	
+	<h2>第三部：下载 Ubuntu 并提取 initrd.lz 和 vmlinuz</h2>
+	<p>访问 <a href="http://ubuntu.com/">Ubuntu</a> 网站下载，把下载完成后的镜像文件考入C盘，并使用虚拟光驱或(解)压缩软件提取 <code>casper</code> 文件夹下的 <code>initrd.lz</code> 和 <code>vmlinuz</code> 两个文件，同样放在 C 盘根目录。</p>
+	
+	<h2>第四部：修改 boot.ini 文件</h2>
+	<p>打开命令提示符，输入 <code>attrib -s -h -r  c:\boot.ini</code><br />任何文本编辑器打开boot.ini文件，并在最后(换行)加入 <code>c:\grldr="Install Ubuntu"</code></p>
+	
+	<h2>第五部：安装 Ubuntu</h2>
+	<p>重新启动计算机，选择 “Install Ubuntu”。<br />安装之前选择 应用程序(Applications) -> 附件(Accessories) -> 终端(Terminal), 拷贝 <code>sudo umount -l /isodevice</code> 到终端，回车。然后运行桌面上的 <span style="color: red;">安装 Ubuntu 版本号</span>, 按照提示完成安装。</p>
+	
+	<h2>第六部：重新引导 Windwos XP</h2>
+	<p>终端运行 $ <code>sudo update-grub</code><br />
+	作用：更新Grub 2菜单，下次重新启动如果想进入Windows, 选择 Windows 启动项就可以了。<br />
+	编辑引导顺序 $ <code>sudo gedit /boot/grub/grub.cfg</code><br />
+	更改 default 后面的数值，数值越小优先级别越高，0为默认启动项。<br /><br />
+	<span style="border: 1px dashed #fff105; font-size: .8em;"> Update: Ubuntu 10.10 安装完成后运行系统更新，Grub步骤可以省略。</span></p>
+	
+</body>
+</html>

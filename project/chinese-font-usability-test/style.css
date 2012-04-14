@@ -1,0 +1,65 @@
+html {
+	background: #29264D;
+}
+body {
+	margin: 2em auto;
+	padding: 1em;
+	width: 640px;
+	
+	font-size: 0.9em;
+	line-height: 1.56;
+	color: #bdb5e0;
+	text-shadow: 0 1px 3px #000;
+}
+header {
+	padding: 0  0 1.33em;
+}
+h1 {
+	text-align: right;
+	font-size: 1.3em;
+}
+p {
+	padding: 0 0 1.33em;
+}
+figure {
+	margin: 1em auto;
+}
+figcaption {
+	margin: 0 0 0.5em;
+	text-align: right;
+}
+a:link, a:visited {
+	color: #bdb5e0;
+}
+a:hover {
+	background: #00599b;
+	color: #fff;
+	text-decoration: none;
+	
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.topcnsite, .fontlist {
+	display: block;
+	margin: .5em 0;
+	padding: 1em;
+	list-style: none;
+	text-indent: 1em;
+}
+.topcnsite li, .fontlist li {
+	padding: .4em 0 .5em;
+	*padding: .4em 0;
+	_padding: .6em 0 .4em;
+	border-left: 3px solid #150b23;
+	border-top: 1px solid #0b0d23;
+	border-bottom: 1px solid #3c3c3c;
+}
+li:first-child { border-top: none; }
+li:last-child { border-bottom: none; }
+
+#license {
+	text-align: right;
+}

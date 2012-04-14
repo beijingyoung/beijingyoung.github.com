@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	
+	<meta charset="UTF-8">
+	
+	<!-- CSS Viewport - http://people.opera.com/rune/TR/css-viewport/ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS Reset - http://www.beijingyoung.com/public/ -->
+	<link rel="stylesheet" href="http://www.beijingyoung.com/public/css/reset.zh.css">
+	<link rel="stylesheet" href="style.css" />
+	
+	<!-- Enable iOS app run in full-screen mode -  http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!--[if lt IE 7.]>
+		<script defer type="text/javascript" src="//www.beijingyoung.com/public/js/fixpng.js"></script>
+	<![endif]-->
+	<!-- Controlling DNS prefetching - https://developer.mozilla.org/En/Controlling_DNS_prefetching -->
+	<link rel="dns-prefetch" href="//www.beijingyoung.com">
+	<!-- Specify your canonical - http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
+	<link rel="canonical" href="http://www.beijingyoung.com/public/">
+	<title>Public Libraries - Beijing Young Studio</title>
+	
+</head>
+<body>
+	
+	<h1>Public Libraries - Beijing Young Studio</h1>
+	
+	<h2 id="one">Anyone starting work before please login into Unix server!</h2>
+	<pre>Please use Terminal check our status:
+
+Check your group : $ <code>id</code>
+
+(Optional) check who online : $ <code>who</code>
+(Optional) check user behavior &amp; server history : $ <code>last</code>
+(Optional) If our server has some problem, (1st) please check last reboot status : $ <code>who -b</code>
+
+Anyone want to reboot server, please broadcast your request and include specific time :
+$ <code>wall
+
+Write what you want to say? Eg:
+
+This is Lily(Name), I will reboot server and perform system maintenance on the -
+(16:00 - 2011.02.14).
+
+It will be takes about 15 minutes, you can login into system on the -
+(16:15 - 2011.02.14).
+
+!!! Who has any questions, please feedback !!!
+</code>
+
+Keyboard : (Control + D)  send your broadcast!</pre>
+	
+	<h2 id="two">Create Any Project, Please Apache Maven!</h2>
+	<h3>See Details : <a href="http://maven.apache.org/">http://maven.apache.org/</a></h3>
+	<pre><code>$ mvn -h</code></pre>
+	<pre>Any Java Project Please $ <code>mvn archetype:create -DgroupId=com.beijingyoung -DartifactId=<span style="color: green;">Project Name</span></code>
+
+Any Java Web Project Please $ <code>mvn archetype:create -DgroupId=com.beijingyoung -DartifactId=<span style="color: green;">Project Name</span> -DarchetypeArtifactId=maven-archetype-webapp</code></pre>
+
+	<h2 id="three">Javadoc Specifications</h2>
+	<pre><code>$ javadoc -h</code></pre>
+	<pre><code>/**
+* @author 
+* @version 
+* @see 
+* @param 
+* @return 
+* @exception 
+*/</code></pre>
+	
+	<h2 id="four">For Chinese HTML5 Document</h2>
+	<pre>&lt;!-- CSS Viewport - http://people.opera.com/rune/TR/css-viewport/ --&gt;
+<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+&lt;!-- CSS Reset - http://www.beijingyoung.com/public/ --&gt;
+<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://www.beijingyoung.com/public/css/reset.zh.css&quot;&gt;</code>
+&lt;!-- Enable iOS app run in full-screen mode -  http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html --&gt;
+<code>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;</code>
+
+<code>&lt;!--[if lt IE 9]&gt;
+	&lt;script src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</code>
+
+<code>&lt;!--[if lt IE 7.]&gt;
+	&lt;script defer type=&quot;text/javascript&quot; src=&quot;//www.beijingyoung.com/public/js/fixpng.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</code>
+
+&lt;!-- Controlling DNS prefetching - https://developer.mozilla.org/En/Controlling_DNS_prefetching --&gt;
+<code>&lt;link rel=&quot;dns-prefetch&quot; href=&quot;//www.beijingyoung.com&quot;&gt;</code>
+
+&lt;!-- Specify your canonical - http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html --&gt;
+<code>&lt;link rel=&quot;canonical&quot; href=&quot;http://www.beijingyoung.com/public/&quot;&gt;</code></pre>
+  	
+  	<p>Please put the above code into &lt;head&gt; tag, check uncompressed source : <a href="http://www.beijingyoung.com/public/css/reset.zh.css">reset.zh.css</a></p>
+	
+	<h2 id="five">For Other Language HTML5 Document</h2>
+	<pre>&lt;!-- CSS Viewport - http://people.opera.com/rune/TR/css-viewport/ --&gt;
+<code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+&lt;!-- CSS Reset - http://www.beijingyoung.com/public/ --&gt;
+<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://www.beijingyoung.com/public/css/reset.css&quot;&gt;</code>
+&lt;!-- Enable iOS app run in full-screen mode -  http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html --&gt;
+<code>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;</code>
+
+<code>&lt;!--[if lt IE 9]&gt;
+	&lt;script src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</code>
+
+<code>&lt;!--[if lt IE 7.]&gt;
+	&lt;script defer type=&quot;text/javascript&quot; src=&quot;//www.beijingyoung.com/public/js/fixpng.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</code>
+
+&lt;!-- Controlling DNS prefetching - https://developer.mozilla.org/En/Controlling_DNS_prefetching --&gt;
+<code>&lt;link rel=&quot;dns-prefetch&quot; href=&quot;//www.beijingyoung.com&quot;&gt;</code>
+
+&lt;!-- Specify your canonical - http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html --&gt;
+<code>&lt;link rel=&quot;canonical&quot; href=&quot;http://www.beijingyoung.com/public/&quot;&gt;</code></pre>
+	
+	<p>Please put the above code into &lt;head&gt; tag, check uncompressed source : <a href="http://www.beijingyoung.com/public/css/reset.css">reset.css</a></p>
+	
+	<h2 id="six">HTML &lt;a&gt; 标签链接类型</h2>
+	
+	<pre>用法：&lt;a rel=&quot;链接类型&quot; href=&quot;http://example.com/&quot;&gt;该链接描述&lt;/a&gt;
+<span style="color: #800000;">注意：请勿加入 title 属性</span></pre>
+	
+	<table>
+		<thead>
+			<tr>
+				<td>链接类型</td>
+				<td>描述</td>
+			</tr>
+		</thead>
+		<tr>
+			<td class="t">nofollow</td>
+			<td>表明这个链接不是这个站点支持的链接。</td>
+		</tr>
+		<tr>
+			<td class="t">external</td>
+			<td>链接指向外部域，也就是非该域以外的域。</td>
+		</tr>
+		<tr>
+			<td class="t">alternate</td>
+			<td>链接一个当前页面的替代表达方式 如: RSS,RDF,RDFa等等。</td>
+		</tr>
+		<tr>
+			<td class="t">author</td>
+			<td>链接指向该页面作者网络主页。</td>
+		</tr>
+		<tr>
+			<td class="t">help</td>
+			<td>链接指向有关的帮助页面。</td>
+		</tr>
+		<tr>
+			<td class="t">license</td>
+			<td>链接指向当前文档的许可协议。</td>
+		</tr>
+		<tr>
+			<td class="t">contents</td>
+			<td>文档目录</td>
+		</tr>
+		<tr>
+			<td class="t">index</td>
+			<td>文档索引</td>
+		</tr>
+		<tr>
+			<td class="t">glossary</td>
+			<td>术语表</td>
+		</tr>
+		<tr>
+			<td class="t">chapter 或者 section 或者 subsection</td>
+			<td>章节</td>
+		</tr>
+		<tr>
+			<td class="t">appendix</td>
+			<td>附录</td>
+		</tr>
+		<tr>
+			<td class="t">start</td>
+			<td>在系列页面中第一页。</td>
+		</tr>
+		<tr>
+			<td class="t">prev</td>
+			<td>在系列页面中指向该页面的上一页。</td>
+		</tr>
+		<tr>
+			<td class="t">next</td>
+			<td>在系列页面中指向该页面的下一页。</td>
+		</tr>
+		<tr>
+			<td class="t">bookmark</td>
+			<td>书签</td>
+		</tr>
+	</table>
+	
+	<h2 id="seven">构建适用于移动设备样式守则</h2>
+	<ul>
+		<li>调整布局文件为纵向一栏，移动设备纵向移动易用性好于横向移动。</li>
+		<li>移除 CSS :hover 伪类属性， 在触控应用装置中该属性无效果。</li>
+		<li>减少多余的 空白空间 & padding，小屏幕意味空间更小。</li>
+		<li>慎用 box-shadow (:none!important;) & opacity 属性，CSS 3 很棒，但是需要大量图形引擎渲染的属性不适合移动设备，这些属性就是移动设备性能杀手！</li>
+		<li>使用盒子模型 <a href="http://www.w3.org/TR/css3-flexbox/#propdef-box-ordinal-group">box-ordinal-group</a> 属性 - 该属性可以在不改变标记语言的前提下，灵活改变标记语言的显示数序。</li>
+		<li>任何图片 alt 属性请使用空值。</li>
+	</ul>
+	
+	<h2 id="eight">搜索引擎优化基本思路</h2>
+	<p>正确理解搜索引擎优化：</p>
+	<blockquote>“ 正确的搜索引擎优化是指使用正确的优化策略让搜索引擎正确解读这个站点信息与内容，当搜索引擎用户发生关键字搜索行为时，在搜索索引列表中以最合理的内容匹配用户行为。”</blockquote>
+	<p>SEO关键词优化策略：内容概要，大纲，总结关键字，判断潜在用户搜索关键字行为。</p>
+	<p>要点：文章关键字个数不要过多，采用正确的语句表达，页面前半部分词组使用极为重要(标题，标签，分类，摘要)。</p>
+	<p>关键词是否为被优化过 (避开流行度竞争度很高的关键词) 是否可行 尝试问问页面内容 尝试自己为搜索用户 &nbsp;->&nbsp; 关键字是否获得搜索引擎的高排名？ &nbsp;->&nbsp; 实测 &nbsp;->&nbsp; 重构 重写？ 或加入第二搜索词 &nbsp;->&nbsp; 优化。</p>
+	
+	<h2>谷歌操作指南</h2>
+	<p class="t">未完成，资料整理中！</p>
+	<table>
+		<thead>
+			<tr>
+				<td>搜索</td>
+				<td>返回的页面容器内容</td>
+			</tr>
+		</thead>
+		<tr>
+			<td><a href="http://www.google.com/search?q=中国+自行车">中国 自行车</a></td>
+			<td>包含短语 “中国” 和 “自行车”</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.google.com/search?q=购买+马蹄莲+OR+龙舌兰">购买 马蹄莲 OR 龙舌兰</a></td>
+			<td>关于 “购买马蹄莲" 或 ”购买龙舌兰“ 的信息</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.google.com/search?q=&quot;学扎马尾&quot;">"学扎马尾"</a></td>
+			<td>准确匹配 "学扎马尾"</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.google.com/search?q=比尔+-盖茨">比尔 -盖茨</a></td>
+			<td>匹配 ”比尔“ 并且不是 ”盖茨“</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.google.com/search?q=路易+%2BI+法国">路易 +一世 法国</a></td>
+			<td>匹配 ”路易一世“，去除不包含 ”法国“ 以外的信息</td>
+		</tr>
+	</table>
+	
+	<h2 id="nine">IE 和 标准浏览器之间的一些不同之处</h2>	
+	<p>对于使用 iframe 元素的文档，针对 IE6/7 的 JavaScript DOM 节点操作，必须保证 DOM 操作就是该文档，否则会抛出 "Invalid Argument" 错误。</p>
+	<p>使用 JavaScript innerHTML 对文档插入部分内容后，在IE中查看文档，结果为标签元素大写。如果元素标签的属性字段没有空格，属性字段没有双引号。属性字段拥有多个值时，最后一个属性值没有分号。IE 不支持对 <code>&lt;head&gt;</code> 元素赋值操作。</p>
+	<p>使用 DOM 操作文档的 class 或 style 属性，标准浏览器可以使用 setAttribute() 或 getAttribute() 两个属性进行操作，针对 IE 必须特殊处理。</p>
+	<p>IE 忽略 CSS 的 <code>white-space: pre-warp;</code> 属性。</p>
+	<p>IE 解析空 <code>&lt;p&gt;&lt;/p&gt;</code> 为 <code>&lt;br /&gt;</code>，标准浏览器不显示为空的 <code>&lt;p&gt;</code> 标记。</p>
+	<p>IE 可以直接给对象添加事件，标准浏览器必须使用对象的 setAttribute() 添加事件。</p>
+	
+	<h2 id="ten">CSS <abbr title="Progressive Enhancement">渐进增强</abbr></h2>
+	<table>
+		<thead>
+			<tr>
+				<td>属性</td>
+				<td>描述</td>
+			</tr>
+		</thead>
+		<tr>
+			<td>screen</td>
+			<td>计算机屏幕（默认值）</td>
+		</tr>
+		<tr>
+			<td>tty</td>
+			<td><abbr title="Teletypes">电传打字(电报)机</abbr>和类似（媒体）工具使用的固定间距字符网格</td>
+		</tr>
+		<tr>
+			<td>tv</td>
+			<td>电视类型的设备（分辨率低，有限的滚动能力）</td>
+		</tr>
+		<tr>
+			<td>projection</td>
+			<td>投影机</td>
+		</tr>
+		<tr>
+			<td>handheld</td>
+			<td>手持设备（屏幕小，有限的带宽）</td>
+		</tr>
+		<tr>
+			<td>print</td>
+			<td>打印预览 模式/打印页面</td>
+		</tr>
+		<tr>
+			<td>braille</td>
+			<td>盲文反馈设备</td>
+		</tr>
+		<tr>
+			<td>aural</td>
+			<td>语音合成器</td>
+		</tr>
+		<tr>
+			<td>all</td>
+			<td>所有设备</td>
+		</tr>
+	</table>
+	
+	<br />
+	
+	<p>分析指标，发现瓶颈，清除障碍。 清除沉余无用原始数据，剩余数据如果无法确定瓶颈，那么就无法改进工作流程。</p>
+	
+	<blockquote class="right" style="color: #600; margin: 0.5em 0 0;">Science is the great antidote to the poison of enthusiasm and superstition. ~ Adam Smith</blockquote>
+	
+</body>
+</html>

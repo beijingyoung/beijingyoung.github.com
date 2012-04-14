@@ -1,0 +1,61 @@
+html {
+	background: url("bg2.png");
+}
+body {
+	/*
+	background: rgba(201, 195, 230, 0.6);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C9C3E6,endColorstr=#99C9C3E6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C9C3E6,endColorstr=#99C9C3E6);
+	zoom: 1;
+	*/
+	
+	position: absolute;
+	margin: 5em;
+	padding: 3em;
+	
+	background: rgba(255, 255, 255, 0.35);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59FFFFFF,endColorstr=#59FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59FFFFFF,endColorstr=#59FFFFFF);
+	zoom: 1;
+	
+	-webkit-border-top-right-radius: 2em;
+	-webkit-border-bottom-left-radius: 2em;
+	-moz-border-radius-topright: 2em;
+	-moz-border-radius-bottomleft: 2em;
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	color: #19783b;
+	text-shadow: 0 -1px 1px #DDD;
+}
+header {
+	margin: 0 0 1.33em;
+	text-align: right;
+}
+article {
+	font-size: 0.8em;
+	line-height: 1.43;
+}
+ul {
+	margin: 1.33em 0;
+}
+p {
+	margin: 0.33em 0;
+}
+footer {
+	font-size: smaller;
+	font-style: italic;
+	margin: 3em auto;
+	text-align: right;
+}
+footer p {
+	line-height: 1.8;
+}
+.music {
+	display: hidden;
+}
+.separation {
+	margin: 3em 0 0;
+}
+.right {
+	text-align: right;
+}

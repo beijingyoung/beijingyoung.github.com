@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<style type="text/css">*{padding:0;margin:0;}body{background:#f2f2f2;font-family:Cambria,Georgia,Verdana,Arial,sans-serif;text-shadow:0 1px #DDD;}#feedback{-webkit-border-radius:1.5em .5em;-moz-border-radius:1.5em .5em;border-radius:1.5em .5em;-webkit-box-shadow:3px 3px 10px #999;-moz-box-shadow:3px 3px 10px #999;box-shadow:3px 3px 10px #999;display:block;width:320px;background:#fff;color:#575757;padding:1.5em 1.3em 2em;text-align:center;font-size:120%;position:absolute;top:30%;left:30%;}h1{font-size:1.3em;line-height:1.68em;color:purple;}p{font-size:1em;line-height:1.56em;}#howlong{color:#008000;}</style>
+	<style type="text/css">
+	@media screen and (max-width: 768px) { #feedback { width: auto; top: 10%; left: 5%; right: 5%; } }
+	</style>
+	
+	<script type="text/javascript">
+	var howlong = 6;
+	for (var i = howlong; i >= 0; i--) {
+		window.setTimeout("doUpdate(" + i + ")", (howlong - i) * 1000);
+	}
+	function doUpdate(num) {
+		document.getElementById("howlong").innerHTML = num;
+		if (num == 0) {
+			window.location = 'http://beijingyoung.com/';
+		}
+	}
+	</script>
+	
+	<title>OOPS! - 404 Not Found</title>
+	
+</head>
+<body>
+	
+	<div id="feedback">
+		<h1>OOPS! Internal Server Error.</h1>
+		<p>The requested URL was not found on this server.</p>
+		<p>After <span id="howlong"></span> seconds, this page will automatic redirect to home page.</p>
+	</div>
+	
+</body>
+</html>

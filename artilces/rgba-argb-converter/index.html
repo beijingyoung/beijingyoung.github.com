@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.min.css" />
+	<style type="text/css">
+	body { font-family: Cambria, Georgia, serif; font-size: 1em; line-height: 1.56; padding: 0.5em; margin: 1.3em 0 2em; text-shadow: 0 -1px 1px #DDD; }
+	h1 { color: #800080; font-size: 1.4em; text-align: center; font-weight: normal; }
+	form { padding: 1em; }
+	label { color: #808000; font-size: 1.3em; }
+	input { margin: 0.33em 0 1em; width: 75%; padding: 6px; }
+	hr { margin: 1em 0; border: 1px solid #dedede; }
+	pre { color: #008000; background: #f6f6f6; }
+	ul { text-align: right; list-style: none; }
+	.generator { border: 3px solid green; background: #ff9; padding: .3em; margin: 1em 0; }
+	.hl { color: #00F; }
+	</style>
+	
+	<title>RGBa and ARGB interaction converter - RGBa for Internet Explorer</title>
+	
+</head>
+
+<body>
+	
+	<h1>RGBa and ARGB interaction converter - RGBa for Internet Explorer</h1>
+	
+	<form id="converter">
+		
+		<label>CSS3 RGBa color</label><br />
+		
+		<input type="text" id="rgba" name="rgba" value="rgba(255,255,255,1)" class="required"><br />
+		
+		<pre>Syntax format:
+background: rgba(red, green, blue, alpha);</pre>
+		<hr />
+		
+		<label class="right">ARGB color for IE 6-8</label><br />
+		<input type="text" id="argb" name="argb" value="#FFFFFFFF" class="required"><br />
+		<pre>Syntax format:
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='<span class="hl">#FFFFFFFF</span>', EndColorStr='<span class="hl">#FFFFFFFF</span>')";
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='<span class="hl">#FFFFFFFF</span>', EndColorStr='<span class="hl">#FFFFFFFF</span>');
+zoom: 1!important;</pre>
+		<hr />
+		
+		<!--
+		<label class="right">CSS3 hsl color</label><br />
+		<input type="text" id="hsl" name="hsl" value="(255,100%,100%)" class="required"><br />
+		<pre>Syntax format:
+color: hsl(hue, saturation, lightness);
+background: hsl(hue, saturation, lightness);</pre>
+		<hr />
+		
+		<label class="right">CSS3 hsla color</label><br />
+		<input type="text" id="hsla" name="hsla" value="(255,100%,100%,1)" class="required"><br />
+		<pre>Syntax format:
+color: hsla(hue, saturation, lightness, alpha);
+background: hsla(hue, saturation, lightness, alpha);</pre>
+		<hr />
+		-->
+		
+	</form>
+	
+	<pre style="padding: 1em; margin: .3em 1em 1em; background: #ffc; color: #800000;"><span style="color: red;">Full code format:</span>
+background: red or transparent; <span style="color: green;">/* Feedback color */</span>
+background: rgba(red, green, blue, alpha); <span style="color: green;">/* For modern browsers */</span>
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='<span class="hl">#FFFFFFFF</span>', EndColorStr='<span class="hl">#FFFFFFFF</span>')"; <span style="color: green;">/* For IE8 */</span>
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='<span class="hl">#FFFFFFFF</span>', EndColorStr='<span class="hl">#FFFFFFFF</span>'); <span style="color: green;">/* For IE6,IE7 */</span>
+zoom: 1!important; <span style="color: green;">/* Trigger hasLayout */</span></pre>
+	
+	<br /><br />
+	<ul>
+		<li>References:</li>
+		<li><a href="http://msdn.microsoft.com/en-us/library/ms532967(v=VS.85).aspx">Alpha Filter</a></li>
+		<li><a href="http://msdn.microsoft.com/en-us/library/ms532997(VS.85).aspx">Gradient Filter</a></li>
+		<li><a href="http://blogs.msdn.com/b/ie/archive/2006/08/31/730887.aspx">Notes on the interaction of ClearType with DXTransforms in IE7</a></li>
+		<li><a href="http://cookbooks.adobe.com/post_IE8_clearType_fix_when_using_filters-16676.html">IE8 clearType fix when using filters</a></li>
+	</ul>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="converter.js"></script>
+	
+</body>
+</html>

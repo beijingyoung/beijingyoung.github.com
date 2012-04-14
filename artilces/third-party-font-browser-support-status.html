@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="各版本浏览器 @font-face 支持状态" /> 
+	<meta name="keywords" content="svg, otf, eot, woff, ttf" />
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.zh.min.css" />
+	
+	<style type="text/css">
+	* { font: 1em/1.8em; }
+	body { padding: 1em; margin: 1em auto; width: 918px; background: #f6f6f6; text-shadow: 0 -1px 1px #575757; }
+	header h1 { text-align: center; color: #333; }
+	table { font-size: 0.875em; line-height: 1.5; padding: 1em; margin: 1em auto; color: #e1f7e2; }
+	td { padding: 0.5em 0.3em; margin: 0.5em 0.3em; border: 1px solid #dedede; text-align: center; }
+	sup { color: #0000FF; }
+	
+	.title { background: #5c4439; color: #fff105; text-shadow: none; }
+	.desktop { background: #808000; }
+	.mobile { background: #008000; }
+	.yes { background: #c85d55; }
+	.no { background: #92a168; }
+	
+	footer { text-align: right; padding: 0.5em 1em; }
+	</style>
+	
+	<title>浏览器自定义字体支持状态表单</title>
+	
+</head>
+<body>
+	
+	<header>
+		<h1>浏览器自定义字体支持状态表单</h1>
+	</header>
+	
+	<article>
+		<table>
+			
+			<tr>
+				<td class="title">浏览器名称</td>
+				<td class="desktop">Chrome</td>
+				<td class="desktop">Firefox</td>
+				<td class="desktop">Safari</td>
+				<td class="desktop">Opera</td>
+				<td class="desktop">IE (Internet Explorer)</td>
+				<td class="mobile">Android / Mobile</td>
+				<td class="mobile">Safari / Mobile</td>
+				<td class="mobile">Opera / Mobile</td>
+				
+			</tr>
+			
+			<tr>
+				<td class="title">支持自定义字体状态</td>
+				<td class="desktop">含 4.0 后续版本</td>
+				<td class="desktop">含 3.5 后续版本</td>
+				<td class="desktop">含 3.1 后续版本</td>
+				<td class="desktop">含 10 Alpha 后续版本</td>
+				<td class="desktop">含 IE 4 (Only 桌面)</td>
+				<td class="mobile">含 2.2 SDK 后续版本</td>
+				<td class="mobile">含 3.1 后续版本</td>
+				<td class="mobile">含 9.7 beta 后续版本</td>
+			</tr>
+			
+			<tr>
+				<td class="title">是否支持 SVG (.svg)</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile yes">支持 (iOS 4.1 之前只支持此格式)</td>
+				<td class="mobile no">不支持</td>
+			</tr>
+			
+			<tr>
+				<td class="title">是否支持 OpenType PS (.otf)</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="mobile yes">支持</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile no">不支持</td>
+			</tr>
+			
+			<tr>
+				<td class="title">是否支持 Embedded OpenType (.eot)</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile no">不支持</td>
+			</tr>
+			
+			<tr>
+				<td class="title">是否支持 Web Open Font For­mat (.woff)</td>
+				<td class="desktop yes">支持 (6<sup>+</sup>)</td>
+				<td class="desktop yes">支持 (3.6<sup>+</sup>)</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="desktop yes">支持 (仅IE9)</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile no">不支持</td>
+				<td class="mobile no">不支持</td>
+			</tr>
+			
+			<tr>
+				<td class="title">是否支持 OpenType TT/TrueType (.ttf)</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop yes">支持</td>
+				<td class="desktop no">不支持</td>
+				<td class="mobile yes">支持</td>
+				<td class="mobile yes">支持 (iOS 4.2<sup>+</sup>)</td>
+				<td class="mobile yes">支持</td>
+			</tr>
+			
+		</table>
+	</article>
+	
+	<footer>
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
+	</footer>
+	
+</body>
+</html>

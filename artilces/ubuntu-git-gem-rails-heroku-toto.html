@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.min.css" />
+	
+	<meta charset="UTF-8">
+	<title>Build personal blog on Heroku - Ubuntu + Ruby + Git + Gem + Rails + Heroku + toto</title>
+	
+	<style type="text/css">html{background:#e3e8ee;font-family:"Helvetica Neue",Helvetica,Tahoma;text-shadow:0 -1px 1px #DDD;}
+body{width:720px;margin:1em auto;background:#ff9f9f;padding:2em;}
+h1{font-size:14px;line-height:18px;color:#000;}
+pre{border:1px dashed #008000;margin:1em;padding:1em;font-size:12.5px;}</style>
+	
+</head>
+<body>
+	
+	<h1>Build personal blog on Heroku - <span style="color: green;">Ubuntu</span> + Ruby + Git + Gem + Rails + Heroku + toto</h1>
+	
+<pre>
+$ <code>sudo apt-get install ruby</code>
+$ <code>ruby -v</code>
+
+$ <code>sudo apt-get install rails</code>
+$ <code>rails -v</code>
+
+$ <code>sudo apt-get install gem</code>
+$ <code>sudo apt-get autoremove</code>
+$ <code>sudo apt-get install rubygems1.9.1</code>
+$ <code>gem -v</code>
+$ <code>sudo gem install rubygems-update</code>
+$ <code>gem environment</code>
+$ <code>gedit ~/.bashrc #or vi ~/.bashrc</code>
+# Add the following code, on the end of the file :
+<code style="color: green;">export PATH=/var/lib/gems/1.8/bin:$PATH</code>
+
+$ <code>echo $PATH</code>
+$ <code>sudo gem install heroku</code>
+$ <code>heroku version</code>
+
+$ <code>sudo apt-get install git</code>
+$ <code>git version</code>
+
+open <a href="http://heroku.com/">heroku.com</a>, register an account.
+$ <code>ssh-keygen -t rsa -C <span style="color: green;">"webmaster@example.com"</span></code>
+# Replace <span style="color: #008080;">webmaster@example.com</span> to login into Heroku's email address.
+
+$ <code>git config --global user.name <span style="color: green;">"Your Name"</span></code>
+$ <code>git config --global user.email <span style="color: green;">"webmaster@example.com"</span></code>
+
+$ <code>git config --global heroku.user <span style="color: green;">"Your Name"</span></code>
+$ <code>git config --global heroku.token <span style="color: green;">"1234567890abcdefg"</span></code>
+<span style="color: #008080;">heroku.token is from your Heroku <a href="https://api.heroku.com/account">account</a> API key.</span>
+
+$ <code>sudo ssh git@heroku.com</code>
+
+$ <code>git clone git://github.com/cloudhead/dorothy.git <span style="color: green;">myblogname</span></code>
+# myblogname = myblogname.heroku.com
+$ <code>cd myblogname</code>
+$ <code>heroku create myblogname</code>
+$ <code>git push heroku master</code>
+
+Now this blog is successful build, please visit http://myblogname.heroku.com/.
+View more detailed configuration please check <a href="http://cloudhead.io/toto">toto</a> website.
+</pre>
+
+
+<pre>
+If your want to change your heroku domain.
+$ <code>git remote rm heroku</code>
+$ <code>git remote add heroku git@heroku.com:<span style="color: green;">domain</span>.git</code>
+
+
+$ <code>heroku keys:clear; sudo ssh-keygen -t rsa; heroku keys:add ~/.ssh/id_rsa.pub</code>
+</pre>
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>中文字体可用性测试 - Beijing Young Studio</title>
+	<!-- CSS Fonts Module Level 3 http://dev.w3.org/csswg/css3-fonts/ -->
+	
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/public/js/html5.min.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/public/js/Fix-IE-png.min.js"></script><![endif]-->
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.zh.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	
+</head>
+<body>
+	
+	<header>
+		<hgroup>
+			<h1>中文字体可用性测试</h1>
+		</hgroup>
+	</header>
+	
+	<article>
+		<p>2010年<strong>云字体</strong>的应用如火如荼，汉语庞大的字库完全可以打消你尝试这一应用的念头。也许就像 妮可-沙利文 谈面向对象 CSS 时所说的一样，我们面前其实拥有一个巨大的烂摊子。</p>
+		<p>当你在使用 Opera 桌面浏览器浏览中文页面，是否发现汉字的渲染无比丑陋？这个测试就源自这里，当然这一问题不仅仅局限于这个浏览器，Opera Engineer 不可能因为这个问题换掉渲染引擎，况且这一问题通过 CSS 的一些修正是可以有所改观的。由于各个不同的浏览器渲染引擎各不相同，本测试的最终结论仅供参考。首先看下面的屏幕截图：</p>
+		<figure>
+			<figcaption>Arial显示中文字体宽度设置对比图</figcaption>
+			<img src="comparison.png" />
+		</figure>
+		<p>其实该测试名称 - ”中文字体可用性测试“，不如说是否应该在 CSS 中，给与 h1 - h6 标签 <code>font-weight: normal;</code> 这一属性。首先看看中文热门站点都在使用什么字体：</p>
+		<figure>
+			<figcaption>日期：2/18/2011 Alexa 前十名中文站点</figcaption>
+			<img src="Alexa-Top-Sites-in China-20110218.png" />
+		</figure>
+	</article>
+	
+	<ul class="topcnsite">
+		<li><a href="http://www.baidu.com/">百度</a> - font-family: arial;</li>
+		<li><a href="http://www.qq.com/">腾讯</a> - font-family: "宋体", "Arial Narrow";</li>
+		<li><a href="http://www.taobao.com/">淘宝</a> - font-family: 'Tahoma','simsun'; font-family: tahoma, arial, 宋体, sans-serif;</li>
+		<li><a href="http://www.sina.com.cn/">新浪</a> - font-family: "宋体";</li>
+		<li><a href="http://www.google.com.hk/">Google.HK</a> - font-family: arial, sans-serif;</li>
+		<li><a href="http://www.163.com/">网易</a> - font-family: "宋体", san-serif;</li>
+		<li><a href="http://www.sohu.com/">搜狐</a> - font-family: '宋体';</li>
+		<li><a href="http://www.google.com/">Google</a> - font-family: arial, sans-serif;</li>
+		<li><a href="http://www.youku.com/">优酷</a> - font-family: arial, helvetica, verdana, tahoma, sans-serif;</li>
+		<li><a href="http://www.soso.com/">搜搜</a> - font-family: arial;</li>
+	</ul>
+	
+	<p style="background: #00599b; color: #fff; padding: 3px;">字体使用率 ： Arial = 6, sans-serif, 宋体 = 5, Tahoma = 3, 其他字体 = 1.</p>
+	<p>题外话：在统计字体时发现 - 淘宝网使用了大量的 HTML5 新特性，如果想大量尝试新技术，相信淘宝会给与很好的发展空间。</p>
+	
+	<p>除了热门站点常用字体，最后一个为继承属性。下列表单加入一些前端开发人员常用字体用于测试使用：</p>
+	<ul class="fontlist">
+		
+		<li>Arial : <a href="arial-400.html">400</a>, <a href="arial-500.html">500</a>, <a href="arial-600.html">600</a>, <a href="arial-700.html">700</a></li>
+		<li>宋体 : <a href="songti-400.html">400</a>, <a href="songti-500.html">500</a>, <a href="songti-600.html">600</a>, <a href="songti-700.html">700</a></li>
+		<li>sans-serif : <a href="sans-serif-400.html">400</a>, <a href="sans-serif-500.html">500</a>, <a href="sans-serif-600.html">600</a>, <a href="sans-serif-700.html">700</a></li>
+		<li>serif : <a href="serif-400.html">400</a>, <a href="serif-500.html">500</a>, <a href="serif-600.html">600</a>, <a href="serif-700.html">700</a></li>
+		<li>Tahoma : <a href="tahoma-400.html">400</a>, <a href="tahoma-500.html">500</a>, <a href="tahoma-600.html">600</a>, <a href="tahoma-700.html">700</a></li>
+		<li>Verdana : <a href="verdana-400.html">400</a>, <a href="verdana-500.html">500</a>, <a href="verdana-600.html">600</a>, <a href="verdana-700.html">700</a></li>
+		<li>Lucida Grande : <a href="lucida-grande-400.html">400</a>, <a href="lucida-grande-500.html">500</a>, <a href="lucida-grande-600.html">600</a>, <a href="lucida-grande-700.html">700</a></li>
+		<li>Cambria : <a href="cambria-400.html">400</a>, <a href="cambria-500.html">500</a>, <a href="cambria-600.html">600</a>, <a href="cambria-700.html">700</a></li>
+		<li>Georgia : <a href="georgia-400.html">400</a>, <a href="georgia-500.html">500</a>, <a href="georgia-600.html">600</a>, <a href="georgia-700.html">700</a></li>
+		<li>Helvetica : <a href="helvetica-400.html">400</a>, <a href="helvetica-500.html">500</a>, <a href="helvetica-600.html">600</a>, <a href="helvetica-700.html">700</a></li>
+		<li>Helvetica Neue : <a href="helvetica-neue-400.html">400</a>, <a href="helvetica-neue-500.html">500</a>, <a href="helvetica-neue-600.html">600</a>, <a href="helvetica-neue-700.html">700</a></li>
+		<li>Courier New : <a href="courier-new-400.html">400</a>, <a href="courier-new-500.html">500</a>, <a href="courier-new-600.html">600</a>, <a href="courier-new-700.html">700</a></li>
+		
+		<li>inherit : <a href="inherit-400.html">400</a>, <a href="inherit-500.html">500</a>, <a href="inherit-600.html">600</a>, <a href="inherit-700.html">700</a></li>
+	</ul>
+	
+	<p>
+		本测试最终结论 - 中文字体最完美的大小为 ： 小于16px - 给与正常宽度，渲染问题出现几率最小。<br />
+		<code>h1, h2, h3, h4, h5, h6 { font-weight: normal !important; }</code> 在中文页面 CSS 设置这一属性非常有必要。 <br />
+		最终结论，仅供参考！
+	</p>
+	
+	<p id="license"><a class="imglink" rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a></p>
+	
+</body>
+</html>

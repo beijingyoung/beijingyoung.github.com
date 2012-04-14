@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]><script src="http://www.beijingyoung.com/js/html5.js"></script><![endif]-->
+	<!--[if lt IE 7.]><script defer type="text/javascript" src="http://www.beijingyoung.com/js/Fix-IE-png.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.beijingyoung.com/public/css/reset.min.css" />
+	
+	<title>Simple Theme for NetNewsWire</title>
+	
+	<style type="text/css">
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	a:link, a:visited {
+		color: #008080;
+	}
+	a:hover {
+		color: #808000;
+		background-color: #737398;
+		background-color: rgba(115, 115, 152, 0.15);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#26737398',EndColorStr='#26737398');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#26737398',EndColorStr='#26737398')";
+		-webkit-transition: color ease-out .35s, background-color .25s linear;
+		-moz-transition: color ease-out .35s, background-color .25s linear;
+		-o-transition: color ease-out .35s, background-color .25s linear;
+		transition: color ease-out .35s, background-color .25s linear;
+	}
+	html {
+		background: #D0DDD7;
+		overflow-y: auto;
+	}
+	body {
+		width: 400px;
+		margin: 3em auto;
+		color: #575757;
+		text-shadow: 0 1px #DDD;
+		font-family: Cambria, Georgia, "Lucida Grande", serif;
+	}
+	header {
+		text-align: center;
+		padding: 2em 1em 1em;
+		color: #800080;
+	}
+	article {
+		padding: 0 2em 2.5em 2em;
+		line-height: 1.3em;
+		font-size: 0.9em;
+	}
+	header, article {
+		background: #FFF;
+	}
+	h1 {
+		font-size: 1.2em;
+	}
+	h2 {
+		font-size: 1.1em;
+	}
+	h2, p {
+		padding-bottom: 0.33em;
+	}
+	ul {
+		list-style: square;
+		list-style-position: inside;
+	}
+	footer {
+		clear: both;
+		background: url(shadow.png) no-repeat;
+		width: 400px;
+		height: 15px;
+	}
+	.download img {
+		border: 0;
+		width: 64px;
+		height: 64px;
+		padding: 2em 0 0;
+	}
+	.download:link, .download:visited, .download:hover {
+		background: none;
+		color: none;
+	}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<h1>Simple Theme for NetNewsWire</h1>
+	</header>
+	<article>
+		<h2>Features</h2>
+		<ul>
+			<li>Block Feed ADS.</li>
+			<li>Font by <a href="http://www.daltonmaag.com/about/aller.html">Dalton Maag</a>.</li>
+			<li>View <a rel="screenshots" href="NNW-simple.png">screenshots</a>.</li>
+		</ul>
+		<br />
+		
+		<h2>How to install ?</h2>
+		<p>Download and decompress the zip file, double-click the theme's folder or move the theme's folder into <code>~/Library/Application Support/NetNewsWire/StyleSheets/</code>.</p>
+		<p>Reboot <a href="http://netnewswireapp.com/">NetNewsWire</a> app, Enjoy!</p>
+		
+		<p style="text-align: center;"><a class="download" href="Simple.nnwstyle.zip"><img src="download.png" alt="Download Simple Theme for NetNewsWire" /></a></p>
+	</article>
+	<footer>
+	</footer>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+	<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="colorbox/colorbox.css" />
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("a[rel='screenshots']").colorbox();
+	});
+	</script>
+</body>
+</html>

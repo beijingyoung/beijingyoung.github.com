@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Ultimate CSS3 Experiments</title>
+	
+<style type="text/css">
+*{padding:0;margin:0;}
+html{background:#eee;}
+body{width:650px;padding:1em 2em;margin:1em auto;font:1em/1.55em;text-shadow:0 -1px 0 #ddd;background:#fff;}
+h1{color:#575757;margin:1.33em 0;}
+.demo{padding:.5em;margin:.33em 0 1em;border:3px dashed #00ffff;}
+hr{margin:3em;border:1px solid #ff00ff;}
+pre{background:#ffccff;color:#222;padding:1em;border: 1px dotted;}
+</style>
+	
+</head>
+<body>
+	
+<h1>Ultimate CSS3 Experiments</h1>
+<p>All demo use pure CSS, non-js!</p>
+
+<!-- ############ Section ############ -->
+<!--
+<p class="demo" id="">Demo :</p>
+
+<pre class="css"></pre>
+
+<style type="text/css">
+</style>
+<hr />
+-->
+
+
+
+<!-- ############ Section ############ -->
+<p class="demo" id="one">Demo One : Fade Effect</p>
+
+<pre class="css">#one {
+	-webkit-transition: opacity 1.5s linear;
+	-moz-transition: opacity 1.5s linear;
+	-o-transition: opacity 1.5s linear;
+	transition: opacity 1.5s linear;
+}
+#one:hover {
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}</pre>
+
+<style type="text/css">
+#one {
+	-webkit-transition: opacity 1.5s linear;
+	-moz-transition: opacity 1.5s linear;
+	-o-transition: opacity 1.5s linear;
+	transition: opacity 1.5s linear;
+}
+#one:hover {
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+</style>
+<hr />
+
+
+<!-- ############ Section ############ -->
+<p class="demo" id="two">Demo Two : Nudge Effect</p>
+
+<pre class="css">#two {
+	-webkit-transition-property: padding, color, background;
+	-webkit-transition-duration: 2000ms, 900ms, 500ms;
+}
+#two:hover{
+	padding: 1em 1em 1em 10em;
+	background: #f2f2f2;
+	color: green;
+}</pre>
+
+<style type="text/css">
+#two {
+	-webkit-transition-property: padding, color, background;
+	-webkit-transition-duration: 2000ms, 900ms, 500ms;
+}
+#two:hover{
+	padding: 1em 1em 1em 10em;
+	background: #f2f2f2;
+	color: green;
+}
+</style>
+<hr />
+
+
+
+<!-- ############ Section ############ -->
+<p class="demo" id="three">Demo three : Pulsate Effect</p>
+
+<pre class="css">#three:hover {
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-name: pulsate;
+	-webkit-animation-duration: 5s;
+}
+@-webkit-keyframes pulsate {
+	0% {
+		width: 400px;
+	}
+	5% {
+		width: 360px;
+	}
+	10% {
+		width: 320px;
+	}
+	15% {
+		width: 280px;
+	}
+	20% {
+		width: 240px;
+	}
+	40% {
+		width: 200px;
+	}
+	45% {
+		width: 160px;
+	}
+	50% {
+		width: 120px;
+	}
+	55% {
+		width: 280px;
+	}
+	60% {
+		width: 320px;
+	}
+	70% {
+		width: 320px;
+	}
+	80% {
+		width: 320px;
+	}
+	90% {
+		width: 360px;
+	}
+	100% {
+		width: 400px;
+	}
+}</pre>
+
+<style type="text/css">
+#three:hover {
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-name: pulsate;
+	-webkit-animation-duration: 5s;
+}
+@-webkit-keyframes pulsate {
+	0% {
+		width: 400px;
+	}
+	5% {
+		width: 360px;
+	}
+	10% {
+		width: 320px;
+	}
+	15% {
+		width: 280px;
+	}
+	20% {
+		width: 240px;
+	}
+	40% {
+		width: 200px;
+	}
+	45% {
+		width: 160px;
+	}
+	50% {
+		width: 120px;
+	}
+	55% {
+		width: 280px;
+	}
+	60% {
+		width: 320px;
+	}
+	70% {
+		width: 320px;
+	}
+	80% {
+		width: 320px;
+	}
+	90% {
+		width: 360px;
+	}
+	100% {
+		width: 400px;
+	}
+}
+</style>
+<hr />
+
+
+
+<!-- ############ Section ############ -->
+<p class="demo" id="four">Demo Four : Bounce Effect</p>
+
+<pre class="css">#four:hover {
+	-webkit-animation-name: bounce;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 6;
+}
+@-webkit-keyframes bounce {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: 360px;
+	}
+}</pre>
+
+<style type="text/css">
+#four:hover {
+	-webkit-animation-name: bounce;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 6;
+}
+@-webkit-keyframes bounce {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: 360px;
+	}
+}
+</style>
+<hr />
+
+
+
+<!--
+
+http://www.webdeveloperjuice.com/2010/01/18/7-javascript-effect-alternatives-using-css3-for-webkit-browsers/
+http://www.elated.com/articles/smooth-fading-image-captions-with-pure-css3/
+http://www.subcide.com/experiments/fail-whale/
+http://www.marcofolio.net/css/3d_animation_using_pure_css3.html
+http://www.paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/
+http://www.zurb.com/playground/inline-form-labels
+http://tutorialzine.com/2010/10/css3-animated-bubble-buttons/
+http://blog.cooljaz124.com/2010/11/slick-css3-animated-image-caption/
+http://www.webexpedition18.com/articles/how-to-create-a-multi-step-signup-form-with-css3-and-jquery/
+http://css-tricks.com/examples/SlideupBoxes/
+http://www.zurb.com/playground/awesome-overlays
+
+-->
+</body>
+</html>
