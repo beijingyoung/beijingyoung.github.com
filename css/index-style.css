@@ -11,6 +11,9 @@
 body {
 	background: url(../images/bg.gif);
 	font-family: "Holy Mackerel Outline";
+	
+	zoom: 1;
+	height: 1%;
 }
 #intro {
 	width: 100%;
