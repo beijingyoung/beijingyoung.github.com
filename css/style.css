@@ -20,7 +20,10 @@ h4, h5, h6 { font-size: 1.4em }
 	padding: 1em auto;
 }
 #main :link, #main :visited {
-	color: #007700;
+	color: #00FF00;
+}
+#main :hover {
+	color: #000;
 }
 #main ul {
 	list-style-position: inside;
