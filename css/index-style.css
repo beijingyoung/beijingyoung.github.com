@@ -25,7 +25,22 @@ body {
 	display: block;
 	text-align: center;
 }
-h3 {
+
+#links {
+	list-style: none;
 	text-align: center;
 	font-size: 1.6em;
 }
+:link, :visited {
+	color: #fff;
+}
+:link:focus, :visited:focus {
+	outline: 1px dotted;
+}
+:link:hover, :visited:hover {
+	-webkit-transition: color ease-in-out .35s, background-color .3s linear;
+	-moz-transition: color ease-in-out .35s, background-color .3s linear;
+	-o-transition: color ease-in-out .35s, background-color .3s linear;
+	transition: color ease-in-out .35s, background-color .3s linear;
+}
+:link:active, :visited:active {}
