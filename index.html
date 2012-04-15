@@ -23,20 +23,7 @@
 	</div>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>
-	(function($){
-	    $.fn.extend({
-	        center: function () {
-	            return this.each(function() {
-	                var top = ($(window).height() - $(this).outerHeight()) / 2;
-	                var left = ($(window).width() - $(this).outerWidth()) / 2;
-	                $(this).css({position:'absolute', top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});
-	            });
-	        }
-	    }); 
-	})(jQuery);
-	$('#intro').center();
-	</script>
+	<script>$(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'absolute', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); });</script>
 	
 </body>
 </html>
