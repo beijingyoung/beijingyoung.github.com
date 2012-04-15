@@ -34,10 +34,10 @@ body {
 }
 
 .link:before {
-  content: "{";
+  content: "{ ";
 }
 .link:after {
-  content: "}";
+  content: " }";
 }
 
 
