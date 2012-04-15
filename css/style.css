@@ -10,7 +10,24 @@ body {
     box-shadow: 1px 1px 3px #DDD;
 }
 h1 { font-size: 2em }
-h2 { font-size: 1.6em }
+h2 { font-size: 1.7em }
+h3 { font-size: 1.6em }
+h4, h5, h6 { font-size: 1.4em }
 #banner {
 	margin-bottom: 1em;
+}
+#main {
+	padding: 0.5em auto;
+}
+#main h3 {
+	margin-bottom: .3em;
+}
+#main .posts {
+	margin: 0.5em 0;
+}
+.posts .date {
+	color: #575757;
+}
+#footer{
+	margin: 1em auto;
 }
