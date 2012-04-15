@@ -6,6 +6,10 @@
 		 url('font/HolyMackerelOutline.svg#svgFontName') format('svg');
 }
 
+
+html {
+	height: 1%;
+}
 body {
 	background: url(../images/bg.gif);
 	font-family: "Holy Mackerel Outline";
