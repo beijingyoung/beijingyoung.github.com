@@ -23,10 +23,7 @@
 	</div>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="/public/js/rz.js"></script>
-	<script>
-	$('#intro').center();
-	</script>
+	<script> $(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'absolute', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); }); </script>
 	
 </body>
 </html>
