@@ -24,9 +24,11 @@
 		</h1>
 	</div>
 	
-	<script>
+	<script defer>
 	$(window).resize(function() {
 		$('#intro').css({
+			width: '100%', 
+			box-shadow: 'inset 0 0 320px rgba(255, 255, 255, 0.35)', 
 			position: 'absolute', 
 			left: ($(window).width() - $('#intro').outerWidth()) / 2, 
 			top: ($(window).height() - $('#intro').outerHeight()) / 2
