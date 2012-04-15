@@ -13,7 +13,9 @@ body {
 }
 
 #intro {
+	line-height: 1;
 	width: 100%;
+	position: absolute;
 	-webkit-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.35);
 	-moz-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.35);
 	-o-box-shadow: inset 0 0 320px rgba(255, 255, 255, 0.35);
