@@ -23,7 +23,22 @@
 	</div>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>$(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'absolute', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); });</script>
+	<script>
+	jQuery.fn.center = function(parent) {
+	    if (parent) {
+	        parent = this.parent();
+	    } else {
+	        parent = window;
+	    }
+	    this.css({
+	        "position": "absolute",
+	        "top": ((($(parent).height() - this.outerHeight()) / 2) + $(parent).scrollTop() + "px"),
+	        "left": ((($(parent).width() - this.outerWidth()) / 2) + $(parent).scrollLeft() + "px")
+	    });
+	return this;
+	}
+	$("#intro").center(true);
+	</script>
 	
 </body>
 </html>

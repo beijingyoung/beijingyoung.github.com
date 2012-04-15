@@ -20,8 +20,8 @@ body {
 	
 	background: transparent;
 	background: rgba(255, 255, 255, 0.25);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#59FFFFFF', EndColorStr='#59FFFFFF')";
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#59FFFFFF', EndColorStr='#59FFFFFF');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF')";
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF');
 	zoom: 1!important;
 }
 #logo {
