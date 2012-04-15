@@ -19,7 +19,7 @@ body {
 	vertical-align: middle;
 	
 	background: transparent;
-	background: rgba(255, 255, 255, 0.35);
+	background: rgba(255, 255, 255, 0.15);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#59FFFFFF', EndColorStr='#59FFFFFF')";
 	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#59FFFFFF', EndColorStr='#59FFFFFF');
 	zoom: 1!important;
