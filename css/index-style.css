@@ -24,5 +24,4 @@ body {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
-	-webkit-box-reflect: left 0 -webkit-gradient(linear, left bottom, left top, from(white), to(transparent));
 }
