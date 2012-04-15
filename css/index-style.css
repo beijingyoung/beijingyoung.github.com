@@ -32,15 +32,14 @@ body {
 	font-size: 1.6em;
 }
 :link, :visited {
-	color: #fff;
+	color: #000;
+	text-decoration: none;
 }
 :link:focus, :visited:focus {
 	outline: 1px dotted;
 }
 :link:hover, :visited:hover {
-	-webkit-transition: color ease-in-out .35s, background-color .3s linear;
-	-moz-transition: color ease-in-out .35s, background-color .3s linear;
-	-o-transition: color ease-in-out .35s, background-color .3s linear;
 	transition: color ease-in-out .35s, background-color .3s linear;
+	background: rgba(250, 212, 206, .75);
+	color: #fff;
 }
-:link:active, :visited:active {}
