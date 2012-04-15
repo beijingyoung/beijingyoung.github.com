@@ -13,9 +13,6 @@ body {
 	font-family: "Holy Mackerel Outline";
 }
 #intro {
-	width: 100%;
-	display: inline-block;
-	vertical-align: middle;
 	background: transparent;
 	background: rgba(255, 255, 255, 0.25);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF')";
