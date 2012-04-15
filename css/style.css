@@ -9,3 +9,8 @@ body {
     width: 756px;
     box-shadow: 1px 1px 3px #DDD;
 }
+h1 { font-size: 2em }
+h2 { font-size: 1.6em }
+#banner {
+	margin-bottom: 1em;
+}
