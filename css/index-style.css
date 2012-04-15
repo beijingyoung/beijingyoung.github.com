@@ -32,12 +32,15 @@ body {
 	font-size: 1.6em;
 	padding: 0.5em 1em 1.5em 1em;
 }
-#links li:before {
+
+#links li a::before {
 	cotent: "{ ";
 }
-#links li:after {
+#links li a::after {
 	cotent: " }";
 }
+
+
 :link, :visited {
 	color: #000;
 	text-decoration: none;
