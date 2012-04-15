@@ -41,6 +41,5 @@ body {
 }
 :link:hover, :visited:hover {
 	transition: color ease-in-out .35s, background-color .3s linear;
-	background: rgba(250, 212, 206, .75);
-	color: #fff;
+	background: rgba(255, 255, 0, 0.75);
 }
