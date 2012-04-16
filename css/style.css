@@ -53,7 +53,7 @@
 }
 #archives footer[role="contentinfo"] {
 	text-align: right;
-	margin: 1em;
+	margin: 2em 1em 1em;
 	font-size: 16px;
 	color: #ccc;
 }
