@@ -15,6 +15,7 @@ title: Beijing Young Studios Weblog Archives
 	<h3>Older Posts</h3>
 	<ul class="posts">
 		<li><time datetime="2011-07-29">29 Jul 2011</time> &nbsp; <a href="/articles/rgba-argb-converter/">RGBa for Internet Explorer</a></li>
+		<li><time datetime="2011-06-24">24 Jun 2011</time> &nbsp; <a href="/project/chinese-font-usability-test/">中文字体可用性测试</a></li>
 		<li><time datetime="2011-05-30">30 May 2011</time> &nbsp; <a href="/articles/pab/">你是否具有侵略性被动行为？</a></li>
 		<li><time datetime="2011-05-30">30 May 2011</time> &nbsp; <a href="/articles/third-party-font-browser-support-status.html">浏览器自定义字体支持状态表单</a></li>
 		<li><time datetime="2011-05-30">30 May 2011</time> &nbsp; <a href="/articles/non-cd-hard-disk-install-ubuntu/">硬盘安装Ubuntu</a></li>
