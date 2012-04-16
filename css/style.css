@@ -30,3 +30,8 @@
 	width: 756px;
 	margin: 2em auto;
 }
+#archives .posts {
+	list-style-position: inside;
+	list-style-type: hebrew;
+	color: #ccc;
+}
