@@ -23,6 +23,8 @@
 :link:hover, :visited:hover { color: #000; background: #e0f400; text-decoration: none; transition: color ease-in-out .35s, background-color .3s linear; }
 :link:active, :visited:active {}
 
+
+
 #archives {
 	font-family: "BYS Web Font";
 	font-size: 1.44em;
@@ -42,7 +44,7 @@
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
-#footer {
+#archives[role="contentinfo"] {
 	text-align: right;
 	font-size: 1em;
 	margin: 1em;
