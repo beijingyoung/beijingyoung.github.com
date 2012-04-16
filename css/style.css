@@ -40,7 +40,7 @@
 	font-size: 1.56em;
 }
 #archives .posts {
-	style-type: none;
+	list-style: none;
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
