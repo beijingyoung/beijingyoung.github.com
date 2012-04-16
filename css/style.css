@@ -48,14 +48,5 @@
 #archives footer[role="contentinfo"] {
 	text-align: right;
 	margin: 1em;
-}
-
-
-
-@media only screen and (max-width: 640px) {
-	body {
-		width: auto;
-		margin: .5em;
-		padding: .5em;
-	}
+	font-size: 16px;
 }
