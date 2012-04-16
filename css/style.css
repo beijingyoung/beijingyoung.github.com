@@ -34,11 +34,11 @@
 	margin-bottom: 1.3em;
 }
 #archives header h1 {
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 #archives .posts {
 	list-style-position: inside;
-	list-style-type: hebrew;
+	list-style-type: disc;
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
