@@ -16,6 +16,13 @@
 
 
 
+:link {}
+:visited {}
+:link, :visited { color: #4bb14b; }
+:link:focus, :visited:focus { outline: 1px dotted; }
+:link:hover, :visited:hover { transition: color ease-in-out .35s, background-color .3s linear; }
+:link:active, :visited:active {}
+
 #archives {
 	font-family: "Beijing Young Studios Web";
 	font-size: 1.8em;
