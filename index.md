@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage">
 <head>
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<title>Beijing Young Studios</title>
 	<link rel="shortcut icon" type="image/x-icon" href="//beijingyoung.com/images/animated.gif">
 	<link rel="stylesheet" href="//beijingyoung.com/public/css/reset.css">
 	<link rel="stylesheet" href="//beijingyoung.com/css/index-style.css">
-	
+
 	<meta name="google-site-verification" content="34EXZYtdO9W3touia6KHRT2jJvZII4JSK7MyJL7oI9M">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!--[if lt IE 7.]><script defer type="text/javascript" src="//beijingyoung.com/public/js/pngfix.js"></script><![endif]-->
-	
+
 </head>
 <body>
-	
+
 	<div id="intro" role="main">
-		
+
 		<h1 id="logo">
-			<img src="/images/logo.png" alt="Beijing Young Studios">
+			<img src="http://beijingyoung.com/images/logo.png" alt="Beijing Young Studios">
 		</h1>
-		
+
 		<ul id="links">
 			<li><a class="link" href="http://beijingyoung.com/archives.html">Weblogs</a></li>
-			<li><a class="link" href="http://beijingyoung.com/">Hire</a></li>
 		</ul>
-		
+
 	</div>
-	
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script> $(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'relative', width: '100%', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); }); </script>
-	
+	<script>$(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'relative', width: '100%', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); });</script>
+
+	<!--
+		There has a render(css) bug on the webkit browser reload the index page.
+		Resize the browser windows, browser render will be normal.
+		It need fix.
+	-->
+
 </body>
 </html>
