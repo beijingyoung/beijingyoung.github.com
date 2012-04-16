@@ -7,5 +7,3 @@ tags:
 - css
 - javascript
 ---
-
-绝对，相对， 固定。
