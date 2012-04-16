@@ -38,7 +38,7 @@
 }
 #archives .posts {
 	list-style-position: inside;
-	list-style-type: disc;
+	list-style-type: square;
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
