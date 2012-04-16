@@ -34,7 +34,7 @@
 	margin-bottom: 1.3em;
 }
 #archives header h1 {
-	font-size: 1.7em;
+	font-size: 1.6em;
 }
 #archives .posts {
 	list-style-position: inside;
@@ -42,8 +42,18 @@
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
-#archives footer p {
+#archives #footer {
 	text-align: right;
 	font-size: 1em;
 	margin: 1em;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+	body {
+		width: auto;
+		-webkit-text-size-adjust: 100%
+		-ms-text-size-adjust: 100%;
+	}
 }
