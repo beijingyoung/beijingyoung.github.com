@@ -25,7 +25,7 @@
 
 #archives {
 	font-family: "Beijing Young Studios Web";
-	font-size: 1.6em;
+	font-size: 1.44em;
 	line-height: 1.68;
 	width: 756px;
 	margin: 2em auto;
@@ -33,13 +33,16 @@
 #archives header {
 	margin-bottom: 1.3em;
 }
+#archives header h1 {
+	font-size: 1.8em;
+}
 #archives .posts {
 	list-style-position: inside;
 	list-style-type: hebrew;
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
 }
-#archives footer[role="contentinfo"] {
+#archives footer p {
 	text-align: right;
 	font-size: 1em;
 	margin: 1em;
