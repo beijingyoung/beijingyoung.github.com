@@ -20,11 +20,11 @@
 :visited {}
 :link, :visited { color: #4bb14b; }
 :link:focus, :visited:focus { outline: 1px dotted; }
-:link:hover, :visited:hover { transition: color ease-in-out .35s, background-color .3s linear; }
+:link:hover, :visited:hover { color: #999; background: #ffe100; text-decoration: none; transition: color ease-in-out .35s, background-color .3s linear; }
 :link:active, :visited:active {}
 
 #archives {
 	font-family: "Beijing Young Studios Web";
-	font-size: 1.8em;
+	font-size: 1.6em;
 	line-height: 1.68;
 }
