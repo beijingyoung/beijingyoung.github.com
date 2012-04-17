@@ -17,13 +17,13 @@ body {
 	background: url(../images/bg.gif);
 }
 #intro {
-	width: 100%;
-	height: 330px;	
 	background: transparent;
 	background: rgba(255, 255, 255, 0.25);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF')";
 	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF');
 	zoom: 1!important;
+	width: 100%;
+	height: 330px!important;
 }
 #logo {
 	padding: 0.5em;
