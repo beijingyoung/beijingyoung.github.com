@@ -16,10 +16,17 @@
 </head>
 <body id="post">
 	
+	
+	<article id="main" role="article">
+		<h1>{{ page.title }}</h1>
+		{{ content}}
+	<article>
+	
+	
 	<nav role="navigation">
 		<ul>
 			<li><a id="backtop" href="#main"><abbr title="Back Top"><span class="keymap">&#x2305;</span> + <span class="keymap">T</span></abbr></a></li>
-			<li><a id="backhome" href="{{ site.url }}archives.html"><abbr title="Back Home"><span class="keymap">&#x21E7;</span> + <span class="keymap">H</span></abbr></a></li>
+			<li><a id="backhome" href="{{ site.url }}/archives.html"><abbr title="Back Home"><span class="keymap">&#x21E7;</span> + <span class="keymap">H</span></abbr></a></li>
 			{% if page.previous %}
 			<li><a rel="prev" id="previtem" href="{{ site.url }}{{ page.previous.url }}"><abbr title="Previous"><span class="keymap">&#x2190;</span> + <span class="keymap">P</span></abbr></a></li>
 			{% endif %}
@@ -29,13 +36,20 @@
 		</ul>
 	</nav>
 	
-	<article id="main" role="article">
-		{{ content}}
-	<article>
 	
 	<footer id="footer" role="contentinfo">
+		
+		<form role="search" id="searchform" action="http://www.google.com/search" method="get">
+			<input type="hidden" name="q" value="site:beijingyoung.com">
+			<input type="search" name="q">
+			<button type="submit">Search</button>
+		</form>
+		
 		<p>&copy; 2012 All Rights Reserved.</p>
+		
 	</footer>
+	
+	<script src="{{ site.url }}/public/js/keyevent.js"></script>
 	
 </body>
 </html>

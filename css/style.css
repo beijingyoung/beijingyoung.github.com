@@ -25,7 +25,7 @@
 
 
 
-#archives {
+#archives, #post {
 	font-family: "BYS Web Font", Cambria, Georgia, serif;
 	font-size: 1.44em;
 	line-height: 1.68;
@@ -59,6 +59,24 @@
 	font-size: 16px;
 	color: #ccc;
 }
+
+
+
+#post {
+	
+}
+nav[role="navigation"] {
+	margin: 1em auto;
+	padding: 0.5em;
+}
+nav[role="navigation"] abbr {
+	cursor: pointer;
+	border: 0;
+}
+#backtop {}
+#backhome {}
+#previtem {}
+#nextitem {}
 
 
 
