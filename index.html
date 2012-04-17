@@ -30,13 +30,19 @@
 	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script>$(document).ready(function() { $(window).resize(function() { $('#intro').css({ position: 'absolute', width: '100%', top: ($(window).height() - $('#intro').outerHeight()) / 2, left: ($(window).width() - $('#intro').outerWidth()) / 2 }); }); $(window).resize(); });</script>
-
-	<!--
-		There has a render(css) bug on the webkit browser reload the index page.
-		Resize the browser windows, browser render will be normal.
-		It need fix.
-	-->
-
+	<script>
+	$(document).ready(function() {
+		$(window).resize(function() {
+			$('#intro').css({
+				position: 'absolute',
+				width: '100%',
+				top: ($(window).height() - $('#intro').outerHeight()) / 2
+				//left: ($(window).width() - $('#intro').outerWidth()) / 2
+			});
+		});
+		$(window).resize();
+	});
+	</script>
+	
 </body>
 </html>
