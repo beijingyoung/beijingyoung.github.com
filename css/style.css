@@ -48,7 +48,7 @@
 #archives .posts li {
 	margin: 0.2em 0 0;
 }
-#archives h3 {
+#archives #main h3 {
 	font-size: 1.3em;
 }
 #archives .posts time {
