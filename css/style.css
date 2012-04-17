@@ -72,7 +72,7 @@
 	#main ul, #main ol, #main dd { list-style-position: inside; color: #777; padding: 0 0 1.33em 1.33em; }
 
 nav[role="navigation"] {
-	font-family: serif;
+	font-family: sans-serif;
 	margin: 1em auto;
 	padding: 0.5em;
 	line-height: 1;
