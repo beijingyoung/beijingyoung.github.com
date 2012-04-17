@@ -86,6 +86,12 @@ nav[role="navigation"] abbr {
 #backhome {}
 #previtem {}
 #nextitem {}
+#post .keymap {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #e0f400;
+}
 
 
 
