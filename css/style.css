@@ -62,14 +62,13 @@
 
 
 
-#post {}
-#post #main h1 {
-	font-size: 1.8em;
-	color: #5edbda;
-}
-#post #main h2 {
-	font-size: 1.6em;
-}
+#post { margin: 1em auto; }
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 { margin-bottom: 0.3em; }
+	#main h1 { font-size: 1.8em; color: #5edbda; }
+	#main h2, #main h3 { font-size: 1.6em; }
+	#main h4, #main h5, #main h6 { font-size: 1.5em; }
+
 nav[role="navigation"] {
 	font-family: serif;
 	margin: 1em auto;
@@ -84,6 +83,7 @@ nav[role="navigation"] li {
 	line-height: 36px;
 	margin-bottom: 0.2em;
 	text-align: center;
+	height: 1%;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
