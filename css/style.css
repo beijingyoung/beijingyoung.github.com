@@ -73,7 +73,7 @@ nav[role="navigation"] ul {
 	list-style: none;
 }
 nav[role="navigation"] li {
-	height: 42px;
+	display: block;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
@@ -94,6 +94,12 @@ nav[role="navigation"] abbr {
 	height: 40px;
 	border-radius: 20px;
 	background: #e0f400;
+}
+#post footer[role="contentinfo"] {
+	text-align: right;
+	margin: 2em 1em 1em;
+	font-size: 16px;
+	color: #ccc;
 }
 
 
