@@ -29,13 +29,13 @@ layout: post
 	
 	<nav role="navigation">
 		<ul>
-			<li class="clearfix"><a id="backtop" href="#main"><abbr title="Back Top"><span class="keymap">&#x2305;</span> &amp; <span class="keymap">T</span></abbr></a></li>
-			<li class="clearfix"><a id="backhome" href="{{ site.url }}/archives.html"><abbr title="Back Home"><span class="keymap">&#x21E7;</span> &amp; <span class="keymap">H</span></abbr></a></li>
+			<li class="clearfix"><a id="backtop" href="#main"><abbr title="Back Top"><span class="keymap">&#x2305;</span> | <span class="keymap">T</span></abbr></a></li>
+			<li class="clearfix"><a id="backhome" href="{{ site.url }}/archives.html"><abbr title="Back Home"><span class="keymap">&#x21E7;</span> | <span class="keymap">H</span></abbr></a></li>
 			{% if page.previous %}
-			<li class="clearfix"><a rel="prev" id="previtem" href="{{ site.url }}{{ page.previous.url }}"><abbr title="Previous"><span class="keymap">&#x2190;</span> &amp; <span class="keymap">P</span></abbr></a></li>
+			<li class="clearfix"><a rel="prev" id="previtem" href="{{ site.url }}{{ page.previous.url }}"><abbr title="Previous"><span class="keymap">&#x2190;</span> | <span class="keymap">P</span></abbr></a></li>
 			{% endif %}
 			{% if page.next %}
-			<li class="clearfix"><a rel="next" id="nextitem" href="{{ site.url }}{{ page.next.url }}"><abbr title="Next"><span class="keymap">N</span> &amp; <span class="keymap">&#x2192;</span></abbr></a></li>
+			<li class="clearfix"><a rel="next" id="nextitem" href="{{ site.url }}{{ page.next.url }}"><abbr title="Next"><span class="keymap">N</span> | <span class="keymap">&#x2192;</span></abbr></a></li>
 			{% endif %}
 		</ul>
 	</nav>
