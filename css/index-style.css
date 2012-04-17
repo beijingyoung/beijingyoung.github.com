@@ -9,6 +9,8 @@
 */
 
 
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
 
 body {
 	background: url(../images/bg.gif);
