@@ -74,6 +74,7 @@ nav[role="navigation"] ul {
 }
 nav[role="navigation"] li {
 	display: block;
+	line-height: 40px;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
@@ -85,15 +86,24 @@ nav[role="navigation"] abbr {
 	cursor: pointer;
 	border: 0;
 }
-#backtop {}
-#backhome {}
-#previtem {}
-#nextitem {}
-#post .keymap {
+
+#backtop { text-align: center; }
+#backhome { text-align: center; }
+#previtem { float: left; }
+#nextitem { float: right; }
+
+nav[role="navigation"] .keymap {
+	display: inline-block;
 	width: 40px;
 	height: 40px;
-	border-radius: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
 	background: #e0f400;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
 #post footer[role="contentinfo"] {
 	text-align: right;
