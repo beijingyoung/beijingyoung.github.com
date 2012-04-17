@@ -43,6 +43,7 @@
 	list-style: none;
 	color: #ccc;
 	margin: 0 0.5em 1.5em 0;
+	padding: 0;
 }
 #archives .posts li {
 	margin: 0.2em 0 0;
