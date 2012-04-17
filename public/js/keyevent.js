@@ -1,14 +1,3 @@
-if (document.forms[0].elements) {
-	for (i = 0; i < document.forms[0].elements.length; i++) {
-		document.forms[0].elements[i].onclick = function() {
-			var e = targetelement();
-			e.focus();
-			e.select();
-		};
-	}
-}
-
-
 document.onkeyup = keyup;
 function clearactive() {
 	var e = document.getElementById("backtop");
