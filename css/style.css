@@ -72,6 +72,9 @@ nav[role="navigation"] {
 nav[role="navigation"] ul {
 	list-style: none;
 }
+nav[role="navigation"] li {
+	height: 42px;
+}
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
 }
