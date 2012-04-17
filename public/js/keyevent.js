@@ -1,4 +1,5 @@
 document.onkeyup = keyup;
+
 function clearactive() {
 	var e = document.getElementById("backtop");
 	if (e) { e.className = ""; }
@@ -64,3 +65,15 @@ function doevent(el, evt) {
 		return el.fireEvent("on"+evt);
 	}
 }
+
+
+//document.onkeydown = checkKeycode;
+//function checkKeycode(e) {
+//	var keycode;
+//	if (window.event) keycode = window.event.keyCode;
+//	else if (e) keycode = e.which;
+//	alert("Keycode: " + keycode);
+//	if(keycode == 13) {
+//		void(0);
+//	}
+//}

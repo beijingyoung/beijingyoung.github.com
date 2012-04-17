@@ -92,6 +92,7 @@ nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigat
 }
 nav[role="navigation"] :hover {
 	background: none;
+	/* #eedf00 */
 }
 nav[role="navigation"] abbr {
 	cursor: pointer;
