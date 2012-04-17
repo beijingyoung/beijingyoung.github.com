@@ -67,12 +67,16 @@ nav[role="navigation"] {
 	font-family: serif;
 	margin: 1em auto;
 	padding: 0.5em;
+	line-height: 1;
 }
 nav[role="navigation"] ul {
 	list-style: none;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
+}
+nav[role="navigation"] :hover {
+	background: none;
 }
 nav[role="navigation"] abbr {
 	cursor: pointer;
