@@ -115,9 +115,9 @@ nav[role="navigation"] .keymap {
 
 
 @media only screen and (max-width: 640px) {
-	#archives {
+	#archives, #post {
 		width: auto;
-		padding: .5em;
+		padding: 1em;
 		margin: .5em;
 	}
 }
