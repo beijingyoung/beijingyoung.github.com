@@ -85,7 +85,6 @@ nav[role="navigation"] li {
 	line-height: 36px;
 	margin-bottom: 0.2em;
 	text-align: center;
-	height: 1%;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
