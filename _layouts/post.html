@@ -14,17 +14,24 @@
 	<!--[if lt IE 7.]><script defer type="text/javascript" src="//beijingyoung.com/public/js/pngfix.js"></script><![endif]-->
 
 </head>
-<body>
-
-	<header id="banner" role="banner">
-		<h1>{{ page.title }}</h1>
-	</header>
+<body id="post">
 	
-	{{ content}}
+	<nav role="navigation">
+		<ul>
+			<li><abbr title="Back Top"><span class="keymap">&#x2305;</span> + <span class="keymap">T</span></abbr></li>
+			<li><abbr title="Back Home"><span class="keymap">&#x21E7;</span> + <span class="keymap">H</span></abbr></li>
+			<li><abbr title="Previous"><span class="keymap">&#x2190;</span> + <span class="keymap">P</span></abbr></li>
+			<li><abbr title="Next"><span class="keymap">&#x2192;</span> + <span class="keymap">N</span></abbr></li>
+		</ul>
+	</nav>
+	
+	<article role="article">
+		{{ content}}
+	<article>
 	
 	<footer id="footer" role="contentinfo">
 		<p>&copy; 2012 All Rights Reserved.</p>
 	</footer>
-
+	
 </body>
 </html>
