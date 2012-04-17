@@ -62,12 +62,14 @@
 
 
 
-#post {
-	
-}
+#post {}
 nav[role="navigation"] {
+	font-family: serif;
 	margin: 1em auto;
 	padding: 0.5em;
+}
+nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
+	text-decoration: none;
 }
 nav[role="navigation"] abbr {
 	cursor: pointer;
