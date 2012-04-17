@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage">
 <head>
-
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,14 +18,18 @@
 	
 	<nav role="navigation">
 		<ul>
-			<li><abbr title="Back Top"><span class="keymap">&#x2305;</span> + <span class="keymap">T</span></abbr></li>
-			<li><abbr title="Back Home"><span class="keymap">&#x21E7;</span> + <span class="keymap">H</span></abbr></li>
-			<li><abbr title="Previous"><span class="keymap">&#x2190;</span> + <span class="keymap">P</span></abbr></li>
-			<li><abbr title="Next"><span class="keymap">&#x2192;</span> + <span class="keymap">N</span></abbr></li>
+			<li><a id="backtop" href="#main"><abbr title="Back Top"><span class="keymap">&#x2305;</span> + <span class="keymap">T</span></abbr></a></li>
+			<li><a id="backhome" href="{{ site.url }}archives.html"><abbr title="Back Home"><span class="keymap">&#x21E7;</span> + <span class="keymap">H</span></abbr></a></li>
+			{% if page.previous %}
+			<li><a rel="prev" id="previtem" href="{{ site.url }}{{ page.previous.url }}"><abbr title="Previous"><span class="keymap">&#x2190;</span> + <span class="keymap">P</span></abbr></a></li>
+			{% endif %}
+			{% if page.next %}
+			<li><a rel="next" id="nextitem" href="{{ site.url }}{{ page.next.url }}"><abbr title="Next"><span class="keymap">&#x2192;</span> + <span class="keymap">N</span></abbr></a></li>
+			{% endif %}
 		</ul>
 	</nav>
 	
-	<article role="article">
+	<article id="main" role="article">
 		{{ content}}
 	<article>
 	
