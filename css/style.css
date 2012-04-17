@@ -71,6 +71,7 @@ nav[role="navigation"] {
 }
 nav[role="navigation"] ul {
 	list-style: none;
+	clear: both;
 }
 nav[role="navigation"] li {
 	display: block;
