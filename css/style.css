@@ -74,8 +74,8 @@ nav[role="navigation"] ul {
 }
 nav[role="navigation"] li {
 	display: block;
-	line-height: 40px;
-	margin-bottom: 0.3em;
+	line-height: 24px;
+	margin-bottom: 0.2em;
 	text-align: center;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
@@ -96,14 +96,14 @@ nav[role="navigation"] abbr {
 
 nav[role="navigation"] .keymap {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	font-size: 18px;
+	width: 24px;
+	height: 24px;
+	font-size: 16px;
 	font-weight: bold;
-	line-height: 40px;
+	line-height: 24px;
 	text-align: center;
 	background: #e0f400;
-	border-radius: 20px;
+	border-radius: 12px;
 }
 #post footer[role="contentinfo"] {
 	text-align: right;
