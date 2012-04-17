@@ -63,6 +63,13 @@
 
 
 #post {}
+#post #main h1 {
+	font-size: 1.8em;
+	color: #5edbda;
+}
+#post #main h2 {
+	font-size: 1.6em;
+}
 nav[role="navigation"] {
 	font-family: serif;
 	margin: 1em auto;
