@@ -71,13 +71,13 @@ nav[role="navigation"] {
 }
 nav[role="navigation"] ul {
 	list-style: none;
-	clear: both;
 }
 nav[role="navigation"] li {
 	display: block;
 	line-height: 40px;
 	margin-bottom: 0.3em;
 	text-align: center;
+	clear: both;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
@@ -107,7 +107,6 @@ nav[role="navigation"] .keymap {
 	border-radius: 20px;
 }
 #post footer[role="contentinfo"] {
-	clear: both;
 	text-align: right;
 	margin: 2em 1em 1em;
 	font-size: 16px;
