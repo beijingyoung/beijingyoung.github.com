@@ -77,7 +77,6 @@ nav[role="navigation"] li {
 	line-height: 40px;
 	margin-bottom: 0.3em;
 	text-align: center;
-	clear: both;
 }
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
@@ -92,8 +91,8 @@ nav[role="navigation"] abbr {
 
 #backtop { text-align: center; }
 #backhome { text-align: center; }
-#previtem { float: left; }
-#nextitem { float: right; }
+#previtem { float: left; clear: both; }
+#nextitem { float: right; clear: both; }
 
 nav[role="navigation"] .keymap {
 	display: inline-block;
