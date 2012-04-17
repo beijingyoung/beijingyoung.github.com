@@ -68,6 +68,9 @@ nav[role="navigation"] {
 	margin: 1em auto;
 	padding: 0.5em;
 }
+nav[role="navigation"] ul {
+	list-style: none;
+}
 nav[role="navigation"] :link, nav[role="navigation"] :visited, nav[role="navigation"] :hover {
 	text-decoration: none;
 }
