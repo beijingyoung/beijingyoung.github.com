@@ -69,7 +69,7 @@
 	#main h2, #main h3 { font-size: 1.6em; }
 	#main h4, #main h5, #main h6 { font-size: 1.5em; }
 	#main p { padding-bottom: 1.33em; }
-	#main ul, #main ol, #main dd { list-style-position: inside; color: #575757; }
+	#main ul, #main ol, #main dd { list-style-position: inside; color: #575757; padding-bottom: 1.33em; }
 
 nav[role="navigation"] {
 	font-family: serif;
