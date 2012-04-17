@@ -1,9 +1,22 @@
 ---
 layout: post
-title: 谈网页元素位置 
+title: SQLite 特性
 categories:
-- web
+- Web
 tags:
-- css
-- javascript
+- SQLite
 ---
+
+使用 [SQLite](http://sqlite.org/) 是应为最近在看Android的文档, Android内部集成了这个嵌入式关系型数据库. 官方定义SQLite为一个软件库, 自我装载, 无服务器, 零配置, 事务型数据库引擎.
+
+值得注意的是 : SQLite3支持一下五种数据类型:
+
+* Integer(整型)
+* Real(浮点数字型)
+* Text(文本字符串型)
+* Blob(二进制对象型)
+* Null
+
+那其它数据类型呢? **实际上SQLite在运算或保存数据时会将其它数据类型转换成这五种数据类型. 你可以保存任何数据类型到任何字段.** 唯一的例外状况 : 当表主键设置为整型(Integer Primary Key)时, 只能存储64位的整数. 如果向这个字段插入其他数据类型会产生错误.
+
+SQLite在解析SQL语句时, 会忽略表结构中的数据类型声明. 说明 : 虽然忽略数据类型, 建议在项目数据库构建中使用标准SQL语句, 方便阅读理解.
