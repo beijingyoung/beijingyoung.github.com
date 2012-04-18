@@ -18,9 +18,9 @@ body {
 }
 #intro {
 	background: transparent;
-	background: rgba(255, 255, 255, 0.25);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF')";
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#3FFFFFFF', EndColorStr='#3FFFFFFF');
+	background: rgba(219, 238, 244, 0.25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#3FDBEEF4', EndColorStr='#3FDBEEF4')";
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#3FDBEEF4', EndColorStr='#3FDBEEF4');
 	zoom: 1!important;
 	width: 100%;
 }
