@@ -71,7 +71,7 @@
 	#main h4, #main h5, #main h6 { font-size: 1.5em; }
 	#main p { padding-bottom: 1.33em; }
 	#main ul, #main ol, #main dd { list-style-position: inside; color: #777; padding: 0 0 1.33em 1.33em; }
-	#main pre { padding-bottom: 1.33em; }
+	#main pre { margin-bottom: 1.33em; }
 	#main pre, #main code { background: #f8f8f8; border: 1px solid #dedede; }
 
 nav[role="navigation"] {
