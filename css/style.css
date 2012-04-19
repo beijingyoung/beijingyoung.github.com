@@ -24,7 +24,7 @@
 :link:active, :visited:active {}
 
 
-
+#archives:link { color: #70BE44; }
 #archives, #post {
 	font-family: "BYS Web Font", Cambria, Georgia, serif;
 	font-size: 1.44em;
