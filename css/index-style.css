@@ -39,17 +39,17 @@ body {
 	padding: 0.5em 1em 1.5em 1em;
 }
 
-.link:before {
+.link:hover:before {
   content: "{ ";
 }
-.link:after {
+.link:hover:after {
   content: " }";
 }
 
 
 :link, :visited {
 	color: #fff;
-	text-shadow: 2px 2px 2px #DDD;
+	text-shadow: 2px 2px 2px #575757;
 	text-decoration: none;
 }
 :link:focus, :visited:focus {
