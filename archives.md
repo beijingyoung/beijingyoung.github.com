@@ -8,7 +8,7 @@ title: Beijing Young Studios Weblog Archives
     <h3>Weblog Posts</h3>
     <ul class="posts">
         {% for post in site.posts %}
-        <li><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> ⌦ <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> &#x2326; <a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 	
