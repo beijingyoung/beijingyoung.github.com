@@ -49,7 +49,7 @@ body {
 
 :link, :visited {
 	color: #fff;
-	text-shadow: 2px 2px 2px #575757;
+	text-shadow: 1px 1px 2px #333;
 	text-decoration: none;
 }
 :link:focus, :visited:focus {
