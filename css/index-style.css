@@ -37,8 +37,6 @@ body {
 	font-size: 1.6em;
 	line-height: 1.46;
 	padding: 0.5em 1em 1.5em 1em;
-	color: #fff;
-	text-shadow: 2px 2px 2px #DDD;
 }
 
 .link:before {
@@ -50,7 +48,8 @@ body {
 
 
 :link, :visited {
-	color: #000;
+	color: #fff;
+	text-shadow: 2px 2px 2px #DDD;
 	text-decoration: none;
 }
 :link:focus, :visited:focus {
