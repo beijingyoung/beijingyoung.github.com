@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+	
+	<meta charset=UTF-8>
+	<title>CSS 居中显示实例</title>
+	
+	<style>
+	body { margin: 1em auto; padding: 1em; width: 760px; font-weight: bold; border: 1px solid green; word-wrap: break-word; }
+	
+	#block {
+		text-align: center;
+		border: 1px solid #f0f;
+		margin: 1em;
+		padding: 1em;
+	}
+	#block:before {
+		content: '';
+		display: inline-block;
+		height: 100%; 
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+	
+	#one { background: #ffccea }
+	
+	#two {
+		display: inline-block;
+		vertical-align: middle;
+		width: 300px;
+		padding: .5em;
+		
+		color: #fff7f7;
+		background: #875e3d;
+	}
+
+	#three { background: #c4f5c4 }
+	</style>
+	
+</head>
+
+<body>
+	
+	<div id="one"> 谈网页元素位置 &nbsp;&nbsp;&nbsp; #one </div>
+	
+	<div id="block">
+		<p id="two">#two - 黑胡椒，是胡椒科的一种开花藤本植物，它的果实在晒干后通常可作为香料和调味料使用。同样的果实还是“白胡椒”、“红胡椒”与“绿胡椒”的制作原料。黑胡椒原产于南印度，在当地和其他热带地区都有着广泛的种植。黑胡椒的果实在熟透时会呈现黑红色，并包含一粒种子；果实在晒干后会成为直径5毫米的“胡椒子”核果。干燥的黑胡椒粉是欧洲风格菜肴的常用香料，从古代开始，黑胡椒就因其在调味与医学上的双重价值而备受珍视。黑胡椒的香馥来自其含有的胡椒碱。常简称作“胡椒”的黑胡椒粉，是全世界使用最广泛的香料之一，可在世界各地的餐桌上发现，通常会与精制食盐放在一起。</p>
+	</div>
+	
+	<div id="three">
+		<p>#three - 胡椒的果实与种子通过不同的加工方法，可以得到黑胡椒、白胡椒、绿胡椒以及红胡椒。全世界胡椒出口总量的80%-85%为黑胡椒，15%-20%为白胡椒，约1%为绿胡椒。
+黑胡椒是由胡椒藤上未成熟的浆果制成的。浆果首先会在热水中暂煮片刻，以清洗其表面并预备干燥。同时热度会破坏果实的细胞壁，加速干燥过程中褐化酶的作用。其后几天时间里，浆果会被曝晒于太阳下或在机器中烘干。在此过程中，由于真菌反应的作用，包裹着种子的果皮会逐渐地变黑并收缩，最后成为薄皱的一层。在干燥过程结束后，得到的产品便是黑胡椒子。</p>
+		<p>白胡椒则是由移除果皮的种子制成的。白胡椒的制作通常会采用完全成熟的浆果，并将浆果在水中浸泡约一个星期，在这段时间中果肉部分会松软并逐渐腐烂。通过摩擦去除果肉残留物后，再将裸露的种子干燥。还有其他的用于移除果肉的加工方法，包括移除由未成熟浆果制成黑胡椒的外表皮。</p>
+		<p>在美国，白胡椒常被用作浅色酱汁或土豆泥等食品的调味料，因为黑胡椒在浅色食物中容易被认出。黑胡椒与白胡椒谁更具有辛辣性这点是有争议的。由于外表皮的一些成分无法在种子中寻得，两种胡椒的气味不尽相同。</p>
+		<p>绿胡椒同黑胡椒一样，是由未成熟的浆果制成的。干燥后的绿胡椒在某种程度上还保留着绿色，因为它经过了二氧化硫或冻干之类过程的处理。经过食盐水或醋腌制后的胡椒子也会呈现绿色。新鲜而未处理的胡椒浆果在西方非常罕见，它们主要出现在一些亚洲菜特别是泰国菜中。[7]新鲜胡椒浆果的气味辛辣且清新，并带有浓郁的芳香。[8]未干燥或腌制的胡椒会迅速地腐烂掉。</p>
+		<p>在食盐水和醋中腌制成熟的红胡椒浆果可以制成罕见的红胡椒；干燥绿胡椒的颜色保存技术亦可用于干燥更罕见的成熟红胡椒子。[9]胡椒中的红胡椒品种不同于另一种更常见的“红胡椒子”，后者是不同科的秘鲁胡椒木（Schinus molle）及其近亲巴西胡椒木（Schinus terebinthifolius）的果实。在过去曾有关于红胡椒子作为食品是否安全的争论，但现在该争论已经平息了。[10]黑胡椒在植物学上与被叫做“川椒”的花椒无任何联系。</p>
+	</div>
+
+
+<br><br><br><br><br><br>
+
+<pre>/* 文档样式 */
+
+body { margin: 1em auto; padding: 1em; width: 760px; font-weight: bold; border: 1px solid green; word-wrap: break-word; }
+	
+#block {
+	text-align: center;
+	border: 1px solid #f0f;
+	margin: 1em;
+	padding: 1em;
+}
+#block:before {
+	content: '';
+	display: inline-block;
+	height: 100%; 
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+	
+#one { background: #ffccea }
+
+#two {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	padding: .5em;
+	
+	color: #fff7f7;
+	background: #875e3d;
+}
+
+#three { background: #c4f5c4 }</pre>
+	
+	
+	<br><br>
+	<p>
+		<a href="http://beijingyoung.com/2012/04/talk-about-web-elements-position/">返回原文</a><br>
+		<a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E8%83%A1%E6%A4%92">引用： 黑胡椒 - 维基百科</a>
+	</p>
