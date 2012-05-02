@@ -28,15 +28,15 @@
 	</div>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
+	<script>
+	$(window).load(function() {
 		
 		// It important for Webkit!
-		if ($.browser.webkit) {
+		/*if ($.browser.webkit) {
 			$('#intro').css({
 				height: '417px'
 			});
-		}
+		}*/
 		
 		$(window).resize(function() {
 			$('#intro').css({
