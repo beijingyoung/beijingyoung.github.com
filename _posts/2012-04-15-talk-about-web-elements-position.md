@@ -33,4 +33,4 @@ tags:
 
 几种常用实例：
 
-* [绝对宽度居中显示 实例一](/articles/web-elements-position/position-absolute-1.html)
+* [绝对宽度居中显示 实例一](/articles/web-elements-position/center-1.html)
