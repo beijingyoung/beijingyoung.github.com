@@ -29,14 +29,21 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
-	$(window).load(function() {
+	
+	/*
+	$(document).ready(function() {
 		
 		// It important for Webkit!
-		/*if ($.browser.webkit) {
+		if($.browser.webkit) {
 			$('#intro').css({
 				height: '417px'
 			});
-		}*/
+		}
+		
+	});
+	*/
+	
+	$(window).load(function() {
 		
 		$(window).resize(function() {
 			$('#intro').css({
