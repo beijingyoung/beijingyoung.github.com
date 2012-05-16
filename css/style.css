@@ -74,7 +74,7 @@
 	#main ul, #main ol, #main dd { list-style-position: inside; color: #777; padding: 0 0 1.33em 1.33em; }
 	#main li { margin-bottom: 1em; }
 	
-	#main pre { margin-bottom: 1.33em; }
+	#main pre { margin-bottom: 1.33em; font-size: .825em; }
 	#main pre, #main code { background: #f8f8f8; border: 1px solid #dedede; }
 	#main pre code { background: none; border: none; }
 
