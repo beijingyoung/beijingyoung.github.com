@@ -1,12 +1,6 @@
 (function() {
 
-	var domain = [];
-	domain[0] = "google";
-	domain[1] = "youtube";
-	domain[2] = "facebook";
-	domain[3] = "twitter";
-	domain[4] = "wikipedia";
-	domain[5] = "appspot";
+	var domain = ['google', 'youtube', 'facebook', 'twitter', 'wikipedia', 'appspot'];
 	
 //   var protocol = window.location.protocol;
 //   var hostname = window.location.hostname;
