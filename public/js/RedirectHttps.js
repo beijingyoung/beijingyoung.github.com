@@ -28,11 +28,14 @@
 	// }
 
 	for(i = 0; i < brand.length; i++) {
-        
-        if((document.location.hostname.indexOf(brand[i]) > 0) & (document.location.protocol == "http:")) {
-            document.location = "https://" + document.location.hostname + document.location.pathname;
+
+        if(window.location.protocol == "http:") {
+        	
+            if(window.location.hostname.indexOf(brand[i]) > 0) {
+                window.location = "https://" + window.location.hostname + window.location.pathname;
+            }
         }
 
     }
 	
-})(window);
+})();
