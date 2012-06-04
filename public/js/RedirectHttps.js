@@ -1,14 +1,14 @@
 (function() {
 
-	var brand = ['google', 'youtube', 'facebook', 'twitter', 'wikipedia', 'appspot'];
+	var brand = ['google', 'wikipedia', 'ibm', 'youtube', 'facebook', 'twitter', 'appspot'];
 
-//   var protocol = window.location.protocol;
-//   var hostname = window.location.hostname;
-//   var pathname = window.location.pathname;
-	
-//	var protocol = document.location.protocol;
-//	var hostname = document.location.hostname;
-//	var pathname = document.location.pathname;
+	// var protocol = window.location.protocol;
+	// var hostname = window.location.hostname;
+	// var pathname = window.location.pathname;
+
+	// var protocol = document.location.protocol;
+	// var hostname = document.location.hostname;
+	// var pathname = document.location.pathname;
 
 	// window.location.search;
 	// https://developer.mozilla.org/en/DOM/window.location
@@ -32,5 +32,5 @@
 			document.location = "https://" + document.location.hostname + document.location.pathname;
 		}
 	}
-
-})(document);
+	
+})();
