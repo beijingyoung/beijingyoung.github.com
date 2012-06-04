@@ -1,11 +1,12 @@
 (function() {
 
-	var domain[0] = "google";
-	var domain[1] = "youtube";
-	var domain[2] = "facebook";
-	var domain[3] = "twitter";
-	var domain[4] = "wikipedia";
-	var domain[5] = "appspot";
+	var domain = [];
+	domain[0] = "google";
+	domain[1] = "youtube";
+	domain[2] = "facebook";
+	domain[3] = "twitter";
+	domain[4] = "wikipedia";
+	domain[5] = "appspot";
 	
 //   var protocol = window.location.protocol;
 //   var hostname = window.location.hostname;
