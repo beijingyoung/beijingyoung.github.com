@@ -29,7 +29,7 @@
 
 	for(i = 0; i < brand.length; i++) {
 		if(document.location.hostname.indexOf(brand[i]) &&  document.location.protocol == "http:") {
-			document.location = "https://" + hostname + pathname;
+			document.location = "https://" + document.location.hostname + document.location.pathname;
 		}
 	}
 
