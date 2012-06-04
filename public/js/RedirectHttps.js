@@ -1,14 +1,14 @@
 (function() {
 
-	var domain = ['google', 'youtube', 'facebook', 'twitter', 'wikipedia', 'appspot'];
-	
+	var brand = ['google', 'youtube', 'facebook', 'twitter', 'wikipedia', 'appspot'];
+
 //   var protocol = window.location.protocol;
 //   var hostname = window.location.hostname;
 //   var pathname = window.location.pathname;
 	
-	var protocol = document.location.protocol;
-	var hostname = document.location.hostname;
-	var pathname = document.location.pathname;
+//	var protocol = document.location.protocol;
+//	var hostname = document.location.hostname;
+//	var pathname = document.location.pathname;
 
 	// window.location.search;
 	// https://developer.mozilla.org/en/DOM/window.location
@@ -27,8 +27,8 @@
 	// 	location.href = location.href.replace("http://", "https://");
 	// }
 
-	for(i = 0; i < domain.length; i++) {
-		if(hostname.indexOf(domain[i]) && protocol == "http:") {
+	for(i = 0; i < brand.length; i++) {
+		if(document.location.hostname.indexOf(brand[i]) &&  document.location.protocol == "http:") {
 			document.location = "https://" + hostname + pathname;
 		}
 	}
