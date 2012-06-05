@@ -1,6 +1,6 @@
 (function() {
 
-	var brand = ["google", "wikipedia", "ibm", "youtube", "facebook", "twitter", "appspot"];
+	var brand = ["google.com", "wikipedia.com", "ibm.com", "youtube.com", "facebook.com", "twitter.com", "appspot.com", "mozilla.org"];
 
 	// var protocol = window.location.protocol;
 	// var hostname = window.location.hostname;
@@ -32,7 +32,7 @@
         if(window.location.protocol == "http:") {
         	
             if(window.location.hostname.indexOf(brand[i]) > 0) {
-                window.location = "https://" + window.location.hostname + window.location.pathname;
+                window.location = "https://" + window.location.hostname + window.location.pathname + window.location.search;
             }
         }
 
