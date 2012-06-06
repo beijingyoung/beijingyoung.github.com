@@ -28,14 +28,15 @@
 	// }
 
 	for(i = 0; i < brand.length; i++) {
-
-        if(window.location.protocol == "http:") {
-        	
-            if(window.location.hostname.indexOf(brand[i]) > 0) {
+		
+        if(window.location.protocol.toLowerCase() == "http:") {
+			
+            if(window.location.hostname.toLowerCase().indexOf(brand[i]) > 0) {
                 window.location = "https://" + window.location.hostname + window.location.pathname + window.location.search;
             }
+			
         }
-
+		
     }
 	
 })();
