@@ -135,4 +135,4 @@ categories:
 
 CSS WG 工作小组正式允许浏览器供应商使用无前缀 css3 transforms, transitions, animations 属性。
 
-![CSS WG 允许浏览器供应商使用无前缀属性](/beijingyoung/beijingyoung.github.com/blob/master/images/CSSWG-unprefix-css3.png)
+![CSS WG 允许浏览器供应商使用无前缀属性](https://github.com/beijingyoung/beijingyoung.github.com/blob/master/images/CSSWG-unprefix-css3.png)
