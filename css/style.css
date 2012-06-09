@@ -16,6 +16,21 @@
 
 
 
+::-moz-selection {
+    background: #EDEDED;
+    color: #FF00FF;
+}
+::-webkit-selection {
+    background: #EDEDED;
+    color: #FF00FF;
+}
+::selection {
+    background: #EDEDED;
+    color: #FF00FF;
+}
+
+
+
 :link {}
 :visited {}
 :link, :visited { color: #4bb14b; }
