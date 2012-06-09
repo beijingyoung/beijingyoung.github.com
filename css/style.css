@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, strong, b { font-family: 'BYS Web Font'; font-weight: 70
 	
 	#main table { margin: 1em; border: 1px solid #DEDEDE; }
 		#main table caption { font-weight: bold; text-align: right; }
-		#main table th, #main table th td { border: 1px solid #DEDEDE; padding: 5px 1em; }
+		#main table th, #main table td { border: 1px solid #DEDEDE; padding: 5px 1em; }
 
 nav[role="navigation"] {
 	font-family: sans-serif;
