@@ -24,8 +24,7 @@ Selection属性属于 CSS3 pseudo-element. 该属性高亮用户使用鼠标的�
 		color: #FF00FF;
 	}
 
-Selection属性也支持特定HTML元素设置, 例如<blockquote>标签使用私有属性 : 
-	
+Selection属性也支持特定HTML元素设置, 例如 &lt;blockquote&gt; 标签使用私有属性 : 
 	
 	blockquote::-moz-selection {
 		background: #B2DFDA;
@@ -39,32 +38,3 @@ Selection属性也支持特定HTML元素设置, 例如<blockquote>标签使用�
 		background: #B2DFDA;
 		color: #FFF;
 	}
-	
-
-<style>
-::-moz-selection {
-	background: #EDEDED;
-	color: #FF00FF;
-}
-::-webkit-selection {
-	background: #EDEDED;
-	color: #FF00FF;
-}
-::selection {
-	background: #EDEDED;
-	color: #FF00FF;
-}
-
-blockquote::-moz-selection {
-	background: #B2DFDA;
-	color: #FFF;
-}
-blockquote::-webkit-selection {
-	background: #B2DFDA;
-	color: #FFF;
-}
-blockquote::selection {
-	background: #B2DFDA;
-	color: #FFF;
-}
-</style>
