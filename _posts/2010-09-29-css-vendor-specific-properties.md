@@ -130,3 +130,9 @@ categories:
 		</td>
 	</tr>
 </table>
+
+### 06/06/2012
+
+CSS WG 工作小组正式允许浏览器供应商使用无前缀 css3 transforms, transitions, animations 属性。
+
+![CSS WG 允许浏览器供应商使用无前缀属性](../images/CSSWG-unprefix-css3.png)
