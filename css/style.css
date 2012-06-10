@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, strong, b { font-family: 'BYS Web Font'; font-weight: 70
 	#main h1 { font-size: 1.8em; color: #66cdaa;; }
 	#main h2, #main h3 { font-size: 1.6em; }
 	#main h4, #main h5, #main h6 { font-size: 1.5em; }
-	#main p { padding-bottom: 1.33em; }
+	#main p { padding-bottom: 1.33em; color: #321806; }
 	
 	#main ul, #main ol, #main dd { list-style-position: inside; color: #777; padding: 0 0 1.33em 1.33em; }
 	#main li { margin-bottom: 1em; }
