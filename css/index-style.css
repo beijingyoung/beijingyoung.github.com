@@ -22,7 +22,7 @@
 
 body {
 	background: url(../images/bg.gif);
-	font-family: "BYS Web Font", Cambria, Georgia, serif;
+	font-family: Georgia, serif;
 }
 
 /*
@@ -77,7 +77,7 @@ body {
 	font-size: 1.3em;
 	font-weight: bold;
 	line-height: 1.58;
-	padding: 0 1em 2em;
+	padding: 0 1em 1em;
 	
 	color: #FFF;
 	text-shadow: 1px 0 1px #333;
