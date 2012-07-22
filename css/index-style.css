@@ -79,7 +79,7 @@ body {
 	padding: 0 1em 1em;
 	
 	color: #FFF;
-	text-shadow: 1px 0 1px #333;
+	text-shadow: 1px 1px 2px #333;
 }
 
 .link:hover:before {
