@@ -20,7 +20,7 @@
 	<div id="intro" role="main">
 
 		<h1 id="logo"><img src="http://beijingyoung.com/images/logo.png" alt="Beijing Young Studios"></h1>
-		
+
 		<ul id="links">
 			<li>We Craft Internet Stuff</li>
 			<li>Tel: +86 - (0)1381.076.2275</li>
@@ -30,25 +30,25 @@
 		</ul>
 
 	</div>
-	
+
 	<script src="//beijingyoung.com/public/js/jquery-2.1.1.min.js"></script>
 	<script>
-	
+
 	/*
 	$(document).ready(function() {
-		
+
 		// It important for Webkit!
 		if($.browser.webkit) {
 			$('#intro').css({
 				height: '417px'
 			});
 		}
-		
+
 	});
 	*/
-	
+
 	$(window).load(function() {
-		
+
 		$(window).resize(function() {
 			$('#intro').css({
 				position: 'absolute',
@@ -56,11 +56,19 @@
 				left: ($(window).width() - $('#intro').outerWidth()) / 2
 			});
 		});
-		
+
 		$(window).resize();
-		
+
 	});
 	</script>
-	
+
+
+	<!-- Enforce SSL -->
+	<script>
+	var host = "beijingyoung.com";
+	if ((host == window.location.host) && (window.location.protocol != "https:"))
+	window.location.protocol = "https";
+	</script>
+
 </body>
 </html>

@@ -1,4 +1,5 @@
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title/
-url: http://beijingyoung.com
+url: https://beijingyoung.com
+enforce_ssl: beijingyoung.com
