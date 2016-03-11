@@ -5,7 +5,7 @@ categories:
 - CSS
 ---
 
-从CSS 2.1规范开始, W3C(万维网联盟)开始尝试[属性扩展](www.w3.org/TR/CSS2/syndata.html#vendor-keywords), 一些新CSS属性, 在调试与测试阶段允许浏览器生产商为自己的产品定义特殊属性.
+从CSS 2.1规范开始, W3C(万维网联盟)开始尝试[属性扩展](https://www.w3.org/TR/CSS2/syndata.html#vendor-keywords), 一些新CSS属性, 在调试与测试阶段允许浏览器生产商为自己的产品定义特殊属性.
 
 	两种格式 :
 	'-' + 厂商识别码 + '-' + 有意义的名称
